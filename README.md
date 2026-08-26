@@ -102,3 +102,7 @@ So landet der Besucher direkt bei den zum Pin passenden Empfehlungen.
 - `kueche.html`, `wohnen.html`, `technik.html` – Pinterest-Zielseiten
 - `styles.css` – gemeinsames Design
 - `impressum.html`, `datenschutz.html` – rechtliche Platzhalter
+
+
+## Ratgeber / Originalinhalte
+Die Version enthält 10 eigenständige Ratgeberseiten. Passe die Texte an deine tatsächliche Auswahl und Erfahrung an, bevor du sie veröffentlichst. Behaupte insbesondere keine eigenen Tests oder Erfahrungen, die du nicht gemacht hast. Konkrete Amazon-Produkte und Partnerlinks kannst du anschließend passend ergänzen.

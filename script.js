@@ -98,3 +98,12 @@ year.textContent = new Date().getFullYear();
 renderCollections();
 renderFilters();
 renderProducts();
+
+
+const articleCards = document.getElementById("articleCards");
+if (articleCards && window.ARTICLES) {
+  articleCards.innerHTML = window.ARTICLES.map(a => `
+    <a class="article-card" href="${a.slug}.html">
+      <span class="eyebrow">${a.category}</span><h3>${a.title}</h3><p>${a.description}</p><strong>Ratgeber lesen →</strong>
+    </a>`).join("");
+}
