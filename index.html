@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Ausgewählte Produktempfehlungen für Zuhause, Technik und Alltag." />
+  <meta name="theme-color" content="#f7f3ed" />
+  <title>Lieblingsfunde – Produktempfehlungen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Startseite">Lieblingsfunde<span>.</span></a>
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a href="#sammlungen">Sammlungen</a>
+      <a href="#produkte">Produkte</a>
+      <a href="#ueber">Über</a>
+      <a href="#hinweis">Hinweis</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Schönes & Nützliches für den Alltag</p>
+        <h1>Produkte, die einen zweiten Blick wert sind.</h1>
+        <p class="hero-text">Eine kuratierte Auswahl aus Wohnen, Küche, Technik und Alltag – übersichtlich gesammelt und schnell gefunden.</p>
+        <a class="button button-primary" href="#produkte">Empfehlungen ansehen</a>
+      </div>
+      <div class="hero-card" aria-hidden="true">
+        <div class="hero-shape shape-a"></div>
+        <div class="hero-shape shape-b"></div>
+        <div class="hero-mini-card">
+          <span>Neu entdeckt</span>
+          <strong>Praktisch. Schön. Empfehlenswert.</strong>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="collections-section" id="sammlungen">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Für Pinterest</p>
+          <h2>Thematische Sammlungen</h2>
+        </div>
+        <p>Ideal als Zielseite für einzelne Pins: Jede Sammlung hat eine eigene URL und zeigt nur die passenden Produkte.</p>
+      </div>
+      <div class="collection-cards" id="collectionCards"></div>
+    </section>
+
+    <section class="controls" id="produkte">
+      <div>
+        <p class="eyebrow">Empfehlungen</p>
+        <h2>Meine aktuellen Favoriten</h2>
+      </div>
+      <div class="search-wrap">
+        <label class="sr-only" for="search">Produkte durchsuchen</label>
+        <input id="search" type="search" placeholder="Produkte durchsuchen …" autocomplete="off" />
+      </div>
+      <div id="categoryFilters" class="filters" aria-label="Kategorien"></div>
+    </section>
+
+    <section class="product-grid" id="productGrid" aria-live="polite"></section>
+    <p id="emptyState" class="empty-state" hidden>Keine passenden Produkte gefunden.</p>
+
+    <section class="about" id="ueber">
+      <div>
+        <p class="eyebrow">Warum diese Seite?</p>
+        <h2>Weniger suchen, schneller das Richtige finden.</h2>
+      </div>
+      <p>Hier sammle ich Produkte, die durch Design, Funktion oder Preis-Leistung auffallen. Die Auswahl ist bewusst kompakt gehalten und wird regelmäßig ergänzt.</p>
+    </section>
+
+    <section class="disclosure" id="hinweis">
+      <strong>Affiliate-Hinweis</strong>
+      <p>Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. Für dich ändert sich der Preis dadurch nicht. Links zu Amazon können Affiliate-Links sein.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> Lieblingsfunde</span>
+    <div>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </div>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="collections.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
