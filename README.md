@@ -195,3 +195,44 @@ articleSlugs: ["technik-alltag", "usb-c-zubehoer", "homeoffice-helfer"]
 ```
 
 Damit musst du ein Produkt nur einmal pflegen und kannst es auf mehreren Pinterest-Landingpages einsetzen.
+
+
+## Produkt-Admin
+
+Öffne lokal oder auf GitHub Pages `products-admin.html`. Die Seite zeigt dir für jedes Produkt:
+
+- ob eine ASIN vorhanden ist
+- ob ein Bild hinterlegt ist
+- ob ein manueller Affiliate-Link gesetzt ist oder der automatische Link über `partnerId` funktioniert
+- auf wie vielen Ratgeberseiten das Produkt verwendet wird
+
+### Neues Bildformat
+
+Für neue Produkte:
+
+```js
+image: {
+  src: "HIER_DIE_ZULÄSSIGE_BILD_URL",
+  source: "amazon"
+}
+```
+
+`source` kann später auch z. B. `manufacturer` oder `creators-api` sein.
+
+Die Admin-Seite ist nur für dich gedacht und sollte nicht in der öffentlichen Navigation verlinkt werden.
+
+
+## Übergangs-Bilder ohne Amazon API
+
+Unter `assets/products/` liegen generische SVG-Illustrationen für die wichtigsten Produkttypen. Sie zeigen **nicht das konkrete Markenprodukt**, sondern dienen nur als neutrale Kategorieillustration.
+
+In `products.js` werden sie so referenziert:
+
+```js
+image: {
+  src: "assets/products/powerbank.svg",
+  source: "illustration"
+}
+```
+
+Sobald offizielle Amazon-/Creators-API-Bilder verfügbar sind, kann `src` ersetzt und `source` auf `amazon` oder `creators-api` geändert werden.

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Smart Plug">
+  <rect width="800" height="600" rx="48" fill="#f7f7fb"/>
+  <circle cx="400" cy="285" r="205" fill="#ffffff"/>
+  <g stroke="#232735" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    
+<rect x="295" y="185" width="210" height="230" rx="45"/>
+<circle cx="400" cy="300" r="58"/>
+<line x1="375" y1="300" x2="425" y2="300"/>
+<line x1="400" y1="275" x2="400" y2="325"/>
+
+  </g>
+  <text x="400" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="#565b6b">Smart Plug</text>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="GaN-Ladegerät">
+  <rect width="800" height="600" rx="48" fill="#f7f7fb"/>
+  <circle cx="400" cy="285" r="205" fill="#ffffff"/>
+  <g stroke="#232735" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    
+<rect x="300" y="175" width="200" height="250" rx="36"/>
+<rect x="342" y="225" width="116" height="30" rx="10"/>
+<rect x="342" y="285" width="116" height="30" rx="10"/>
+<rect x="342" y="345" width="116" height="30" rx="10"/>
+<line x1="350" y1="155" x2="350" y2="105"/>
+<line x1="450" y1="155" x2="450" y2="105"/>
+
+  </g>
+  <text x="400" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="#565b6b">GaN-Ladegerät</text>
+</svg>

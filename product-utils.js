@@ -1,3 +1,21 @@
+function getProductImageSrc(product) {
+  if (!product) return "";
+
+  if (typeof product.image === "string") {
+    return product.image.trim();
+  }
+
+  if (product.image && typeof product.image === "object") {
+    return String(product.image.src || "").trim();
+  }
+
+  if (typeof product.imageUrl === "string") {
+    return product.imageUrl.trim();
+  }
+
+  return "";
+}
+
 window.ProductUtils = (() => {
   function escapeHtml(value = "") {
     return String(value)
@@ -43,8 +61,8 @@ window.ProductUtils = (() => {
   }
 
   function getImageUrl(product) {
-    // `image` bleibt als Abwärtskompatibilität für ältere Datenstände erhalten.
-    return product.imageUrl?.trim() || product.image?.trim() || "";
+    // Unterstützt das neue Objektformat sowie ältere String-/imageUrl-Datenstände.
+    return getProductImageSrc(product);
   }
 
   function initials(product) {

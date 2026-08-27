@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Ergonomische Maus">
+  <rect width="800" height="600" rx="48" fill="#f7f7fb"/>
+  <circle cx="400" cy="285" r="205" fill="#ffffff"/>
+  <g stroke="#232735" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    
+<path d="M300 360 q0-190 100-190 q100 0 100 190 q0 90-100 90 q-100 0-100-90z"/>
+<line x1="400" y1="170" x2="400" y2="280"/>
+<line x1="370" y1="230" x2="430" y2="230"/>
+
+  </g>
+  <text x="400" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="#565b6b">Ergonomische Maus</text>
+</svg>

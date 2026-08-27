@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Stabmixer">
+  <rect width="800" height="600" rx="48" fill="#f7f7fb"/>
+  <circle cx="400" cy="285" r="205" fill="#ffffff"/>
+  <g stroke="#232735" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    
+<rect x="365" y="130" width="70" height="210" rx="32"/>
+<line x1="400" y1="340" x2="400" y2="430"/>
+<path d="M340 430 Q400 380 460 430"/>
+<path d="M330 455 Q400 505 470 455"/>
+
+  </g>
+  <text x="400" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="#565b6b">Stabmixer</text>
+</svg>

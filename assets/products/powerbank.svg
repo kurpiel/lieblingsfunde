@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Powerbank">
+  <rect width="800" height="600" rx="48" fill="#f7f7fb"/>
+  <circle cx="400" cy="285" r="205" fill="#ffffff"/>
+  <g stroke="#232735" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    
+<rect x="265" y="190" width="270" height="220" rx="35"/>
+<rect x="345" y="220" width="110" height="45" rx="12"/>
+<line x1="325" y1="380" x2="360" y2="380"/>
+<line x1="385" y1="380" x2="420" y2="380"/>
+<line x1="445" y1="380" x2="480" y2="380"/>
+
+  </g>
+  <text x="400" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="#565b6b">Powerbank</text>
+</svg>

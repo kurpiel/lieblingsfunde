@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Produkt-Admin</title>
+  <style>
+    :root { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color:#1f2937; }
+    body { margin:0; background:#f7f7f8; }
+    main { max-width:1200px; margin:0 auto; padding:32px 20px 56px; }
+    h1 { margin:0 0 8px; }
+    p { color:#4b5563; }
+    .summary { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px; margin:24px 0; }
+    .card { background:white; border:1px solid #e5e7eb; border-radius:14px; padding:16px; }
+    .big { font-size:28px; font-weight:700; }
+    table { width:100%; border-collapse:collapse; background:white; border-radius:14px; overflow:hidden; }
+    th,td { padding:12px 10px; border-bottom:1px solid #eee; text-align:left; vertical-align:top; }
+    th { background:#fafafa; font-size:13px; }
+    td { font-size:14px; }
+    .ok { color:#147a3f; font-weight:600; }
+    .bad { color:#b42318; font-weight:600; }
+    .warn { color:#9a6700; font-weight:600; }
+    code { font-size:12px; }
+    .thumb { width:64px; height:64px; object-fit:contain; background:#fafafa; border:1px solid #eee; border-radius:8px; }
+    .tools { display:flex; gap:8px; flex-wrap:wrap; margin:16px 0 22px; }
+    input { padding:10px 12px; border:1px solid #d1d5db; border-radius:10px; min-width:280px; }
+    .note { background:#fff8e6; border:1px solid #f0d58a; border-radius:12px; padding:14px 16px; margin:18px 0; }
+    @media (max-width:800px){ table{display:block; overflow:auto;} }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Produkt-Admin</h1>
+  <p>Interne Übersicht für fehlende Bilder, ASINs und Affiliate-Link-Konfiguration.</p>
+  <div class="note"><strong>Hinweis:</strong> Diese Seite ist nur für dich gedacht. Verlinke sie nicht öffentlich in der Navigation.</div>
+  <div class="summary" id="summary"></div>
+  <div class="tools">
+    <input id="search" placeholder="Produkt, Marke oder ASIN suchen">
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Bild</th><th>Produkt</th><th>ASIN</th><th>Bildstatus</th><th>Affiliate</th><th>Ratgeber</th>
+      </tr>
+    </thead>
+    <tbody id="rows"></tbody>
+  </table>
+</main>
+<script src="settings.js"></script>
+<script src="products.js"></script>
+<script>
+(function(){
+  const products = window.PRODUCTS || window.products || [];
+  const settings = window.SITE_SETTINGS || {};
+  const partnerId = settings.amazon && settings.amazon.partnerId || "";
+  const hasPartner = partnerId && !/DEINE|YOUR/i.test(partnerId);
+
+  const normalized = products.map(p => {
+    const imageSrc = p.image && typeof p.image === "object" ? p.image.src : (p.imageUrl || (typeof p.image==="string" ? p.image : ""));
+    const asin = p.asin || "";
+    const affiliateUrl = p.affiliateUrl || "";
+    const autoAffiliate = !!asin && hasPartner;
+    return { ...p, imageSrc, asin, affiliateUrl, autoAffiliate };
+  });
+
+  function statusText(ok, yes="OK", no="Fehlt"){ return ok ? `<span class="ok">${yes}</span>` : `<span class="bad">${no}</span>`; }
+
+  function render(list){
+    const rows = document.getElementById("rows");
+    rows.innerHTML = list.map(p => `
+      <tr>
+        <td>${p.imageSrc ? `<img class="thumb" src="${p.imageSrc}" alt="">` : "—"}</td>
+        <td><strong>${p.title || p.id || "Unbenannt"}</strong><br><span>${p.brand || ""}</span></td>
+        <td>${p.asin ? `<code>${p.asin}</code>` : `<span class="bad">Fehlt</span>`}</td>
+        <td>${statusText(!!p.imageSrc, "Bild vorhanden", "Bild fehlt")}</td>
+        <td>${p.affiliateUrl ? `<span class="ok">Manueller Link</span>` : p.autoAffiliate ? `<span class="ok">Auto-Link</span>` : `<span class="warn">Nicht aktiv</span>`}</td>
+        <td>${(p.articleSlugs || p.collections || []).length}</td>
+      </tr>
+    `).join("");
+  }
+
+  function updateSummary(){
+    const total = normalized.length;
+    const images = normalized.filter(p=>p.imageSrc).length;
+    const asins = normalized.filter(p=>p.asin).length;
+    const affiliates = normalized.filter(p=>p.affiliateUrl || p.autoAffiliate).length;
+    document.getElementById("summary").innerHTML = `
+      <div class="card"><div class="big">${total}</div><div>Produkte</div></div>
+      <div class="card"><div class="big">${images}/${total}</div><div>Bilder vorhanden</div></div>
+      <div class="card"><div class="big">${asins}/${total}</div><div>ASINs vorhanden</div></div>
+      <div class="card"><div class="big">${affiliates}/${total}</div><div>Affiliate-Link aktiv</div></div>
+    `;
+  }
+
+  document.getElementById("search").addEventListener("input", e => {
+    const q = e.target.value.trim().toLowerCase();
+    render(normalized.filter(p => [p.title,p.brand,p.asin].some(v => (v||"").toLowerCase().includes(q))));
+  });
+
+  updateSummary();
+  render(normalized);
+})();
+</script>
+</body>
+</html>

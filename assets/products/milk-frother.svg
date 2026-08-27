@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Milchaufschäumer">
+  <rect width="800" height="600" rx="48" fill="#f7f7fb"/>
+  <circle cx="400" cy="285" r="205" fill="#ffffff"/>
+  <g stroke="#232735" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    
+<path d="M325 165 h150 l35 245 h-220 z"/>
+<path d="M475 220 q85 15 60 110 q-15 60-70 55"/>
+<line x1="350" y1="205" x2="450" y2="205"/>
+
+  </g>
+  <text x="400" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="#565b6b">Milchaufschäumer</text>
+</svg>
