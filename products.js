@@ -25,12 +25,12 @@ window.PRODUCTS = [
     badge: "Top-Auswahl",
     priority: "A",
     asin: "B09DGBJN2C",
-    asinStatus: "recherchiert",
+    asinStatus: "verifiziert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B09DGBJN2C",
     image: { src: "assets/products/dual-airfryer.svg", source: "illustration" },
     articleSlugs: ["praktische-kuechenhelfer", "geschenkideen-zuhause"],
-    research: { priceRange: "ca. 100–170 €", ratingSnapshot: "4,7/5", reviewCountSnapshot: "8.000+", checked: "August 2026" }
+    research: { priceRange: "ca. 100–170 €", ratingSnapshot: "4,7/5", reviewCountSnapshot: "8.000+", checked: "ASIN-Prüfung 27.08.2026" }
   },
   {
     id: "cosori-dual-zone",
@@ -42,12 +42,12 @@ window.PRODUCTS = [
     badge: "Beliebt",
     priority: "A",
     asin: "B0CHB7TNWH",
-    asinStatus: "recherchiert",
+    asinStatus: "verifiziert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B0CHB7TNWH",
     image: { src: "assets/products/dual-airfryer.svg", source: "illustration" },
     articleSlugs: ["praktische-kuechenhelfer", "geschenkideen-zuhause"],
-    research: { priceRange: "ca. 110–140 €", ratingSnapshot: "4,8/5", reviewCountSnapshot: "200+", checked: "August 2026" }
+    research: { priceRange: "ca. 110–140 €", ratingSnapshot: "4,8/5", reviewCountSnapshot: "200+", checked: "ASIN-Prüfung 27.08.2026" }
   },
   {
     id: "cosori-turboblaze",
@@ -59,12 +59,12 @@ window.PRODUCTS = [
     badge: "Kleine Küche",
     priority: "A",
     asin: "B0CX8W9ZGF",
-    asinStatus: "recherchiert",
+    asinStatus: "verifiziert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B0CX8W9ZGF",
     image: { src: "assets/products/airfryer.svg", source: "illustration" },
     articleSlugs: ["praktische-kuechenhelfer", "kleine-kueche"],
-    research: { priceRange: "ca. 110–140 €", ratingSnapshot: "4,8/5", reviewCountSnapshot: "900+", checked: "August 2026" }
+    research: { priceRange: "ca. 110–140 €", ratingSnapshot: "4,8/5", reviewCountSnapshot: "900+", checked: "ASIN-Prüfung 27.08.2026" }
   },
   {
     id: "bosch-ergomixx-msm67170",
@@ -76,12 +76,12 @@ window.PRODUCTS = [
     badge: "Allrounder",
     priority: "A",
     asin: "B009W0L6KM",
-    asinStatus: "recherchiert",
+    asinStatus: "verifiziert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B009W0L6KM",
     image: { src: "assets/products/hand-blender.svg", source: "illustration" },
     articleSlugs: ["praktische-kuechenhelfer", "kleine-kueche"],
-    research: { priceRange: "ca. 50–70 €", ratingSnapshot: "4,7/5", reviewCountSnapshot: "2.300+", checked: "August 2026" }
+    research: { priceRange: "ca. 50–70 €", ratingSnapshot: "4,7/5", reviewCountSnapshot: "2.300+", checked: "ASIN-Prüfung 27.08.2026" }
   },
   {
     id: "bialetti-moka-express",
@@ -93,12 +93,12 @@ window.PRODUCTS = [
     badge: "Kaffee-Klassiker",
     priority: "A",
     asin: "B071CGGMRG",
-    asinStatus: "recherchiert",
+    asinStatus: "verifiziert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B071CGGMRG",
     image: { src: "assets/products/moka-pot.svg", source: "illustration" },
     articleSlugs: ["kaffee-zuhause", "kleine-kueche", "geschenkideen-zuhause"],
-    research: { priceRange: "ca. 20–45 € je Größe", ratingSnapshot: "4,7/5", reviewCountSnapshot: "10.000+", checked: "August 2026" }
+    research: { priceRange: "ca. 20–45 € je Größe", ratingSnapshot: "4,7/5", reviewCountSnapshot: "10.000+", checked: "ASIN-Prüfung 27.08.2026" }
   },
   {
     id: "wmf-stelio-milchaufschaeumer",
@@ -110,12 +110,12 @@ window.PRODUCTS = [
     badge: "Kaffee",
     priority: "A",
     asin: "B07N7V3B8C",
-    asinStatus: "recherchiert",
+    asinStatus: "verifiziert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B07N7V3B8C",
     image: { src: "assets/products/milk-frother.svg", source: "illustration" },
     articleSlugs: ["kaffee-zuhause", "praktische-kuechenhelfer", "geschenkideen-zuhause"],
-    research: { priceRange: "ca. 45–60 €", ratingSnapshot: "4,2/5", reviewCountSnapshot: "300+", checked: "August 2026" }
+    research: { priceRange: "ca. 45–60 €", ratingSnapshot: "4,2/5", reviewCountSnapshot: "300+", checked: "ASIN-Prüfung 27.08.2026" }
   },
   {
     id: "zwilling-enfinigy-milchaufschaeumer",
@@ -127,12 +127,12 @@ window.PRODUCTS = [
     badge: "Geschenkidee",
     priority: "A",
     asin: "B09MMH65B3",
-    asinStatus: "recherchiert",
+    asinStatus: "verifiziert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B09MMH65B3",
     image: { src: "assets/products/milk-frother.svg", source: "illustration" },
     articleSlugs: ["kaffee-zuhause", "geschenkideen-zuhause"],
-    research: { priceRange: "ca. 60–90 €", ratingSnapshot: "4,3/5", reviewCountSnapshot: "600+", checked: "August 2026" }
+    research: { priceRange: "ca. 60–90 €", ratingSnapshot: "4,3/5", reviewCountSnapshot: "600+", checked: "ASIN-Prüfung 27.08.2026" }
   },
   {
     id: "logitech-mx-master-3s",
@@ -144,12 +144,12 @@ window.PRODUCTS = [
     badge: "Homeoffice-Favorit",
     priority: "A",
     asin: "B07W5JKHFZ",
-    asinStatus: "recherchiert",
+    asinStatus: "verifiziert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B07W5JKHFZ",
     image: { src: "assets/products/mouse.svg", source: "illustration" },
     articleSlugs: ["homeoffice-helfer", "schreibtisch-ordnung", "geschenkideen-zuhause"],
-    research: { priceRange: "ca. 80–110 €", ratingSnapshot: "4,6/5", reviewCountSnapshot: "1.400+", checked: "August 2026" }
+    research: { priceRange: "ca. 80–110 €", ratingSnapshot: "4,6/5", reviewCountSnapshot: "1.400+", checked: "ASIN-Prüfung 27.08.2026" }
   },
   {
     id: "logitech-lift",
@@ -161,12 +161,12 @@ window.PRODUCTS = [
     badge: "Ergonomie",
     priority: "A",
     asin: "B07W4DGC27",
-    asinStatus: "recherchiert",
+    asinStatus: "verifiziert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B07W4DGC27",
     image: { src: "assets/products/mouse.svg", source: "illustration" },
     articleSlugs: ["homeoffice-helfer", "schreibtisch-ordnung"],
-    research: { priceRange: "ca. 45–65 €", ratingSnapshot: "4,7/5", reviewCountSnapshot: "700+ / modellabhängig deutlich mehr", checked: "August 2026" }
+    research: { priceRange: "ca. 45–65 €", ratingSnapshot: "4,7/5", reviewCountSnapshot: "700+ / modellabhängig deutlich mehr", checked: "ASIN-Prüfung 27.08.2026" }
   },
   {
     id: "anker-737-powerbank",
@@ -178,12 +178,12 @@ window.PRODUCTS = [
     badge: "Top-Auswahl",
     priority: "A",
     asin: "B09VPHVT2Z",
-    asinStatus: "recherchiert",
+    asinStatus: "verifiziert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B09VPHVT2Z",
     image: { src: "assets/products/powerbank.svg", source: "illustration" },
     articleSlugs: ["technik-alltag", "usb-c-zubehoer", "homeoffice-helfer", "geschenkideen-zuhause"],
-    research: { priceRange: "ca. 70–110 €", ratingSnapshot: "4,7/5", reviewCountSnapshot: "2.600+", checked: "August 2026" }
+    research: { priceRange: "ca. 70–110 €", ratingSnapshot: "4,7/5", reviewCountSnapshot: "2.600+", checked: "ASIN-Prüfung 27.08.2026" }
   },
   {
     id: "anker-nano-10000",
@@ -195,12 +195,12 @@ window.PRODUCTS = [
     badge: "Unterwegs",
     priority: "A",
     asin: "B0C9CSG3B7",
-    asinStatus: "recherchiert",
+    asinStatus: "verifiziert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B0C9CSG3B7",
     image: { src: "assets/products/powerbank.svg", source: "illustration" },
     articleSlugs: ["technik-alltag", "usb-c-zubehoer", "geschenkideen-zuhause"],
-    research: { priceRange: "ca. 30–45 €", ratingSnapshot: "4,8/5", reviewCountSnapshot: "200+", checked: "August 2026" }
+    research: { priceRange: "ca. 30–45 €", ratingSnapshot: "4,8/5", reviewCountSnapshot: "200+", checked: "ASIN-Prüfung 27.08.2026" }
   },
   {
     id: "ugreen-nexode-100w",
@@ -212,12 +212,12 @@ window.PRODUCTS = [
     badge: "USB-C",
     priority: "A",
     asin: "B091TV6LWN",
-    asinStatus: "recherchiert",
+    asinStatus: "verifiziert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B091TV6LWN",
     image: { src: "assets/products/gan-charger.svg", source: "illustration" },
     articleSlugs: ["usb-c-zubehoer", "technik-alltag", "homeoffice-helfer", "schreibtisch-ordnung"],
-    research: { priceRange: "ca. 35–60 €", ratingSnapshot: "4,7/5", reviewCountSnapshot: "400+", checked: "August 2026" }
+    research: { priceRange: "ca. 35–60 €", ratingSnapshot: "4,7/5", reviewCountSnapshot: "400+", checked: "ASIN-Prüfung 27.08.2026" }
   },
   {
     id: "ugreen-revodok-pro",
@@ -229,12 +229,12 @@ window.PRODUCTS = [
     badge: "Preis-Leistung",
     priority: "A",
     asin: "B0D1XLNWP2",
-    asinStatus: "recherchiert",
+    asinStatus: "verifiziert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B0D1XLNWP2",
     image: { src: "assets/products/usb-c-hub.svg", source: "illustration" },
     articleSlugs: ["usb-c-zubehoer", "homeoffice-helfer", "schreibtisch-ordnung", "technik-alltag"],
-    research: { priceRange: "ca. 15–40 € je Variante", ratingSnapshot: "4,8/5", reviewCountSnapshot: "200+", checked: "August 2026" }
+    research: { priceRange: "ca. 15–40 € je Variante", ratingSnapshot: "4,8/5", reviewCountSnapshot: "200+", checked: "ASIN-Prüfung 27.08.2026" }
   },
   {
     id: "ugreen-usb-c-dock",
@@ -246,12 +246,12 @@ window.PRODUCTS = [
     badge: "Homeoffice",
     priority: "A",
     asin: "B0DRNZFYC9",
-    asinStatus: "recherchiert",
+    asinStatus: "verifiziert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B0DRNZFYC9",
     image: { src: "assets/products/usb-c-hub.svg", source: "illustration" },
     articleSlugs: ["homeoffice-helfer", "usb-c-zubehoer", "schreibtisch-ordnung"],
-    research: { priceRange: "je Modell ca. 25–100+ €", ratingSnapshot: "4,7/5", reviewCountSnapshot: "300+", checked: "August 2026" }
+    research: { priceRange: "je Modell ca. 25–100+ €", ratingSnapshot: "4,7/5", reviewCountSnapshot: "300+", checked: "ASIN-Prüfung 27.08.2026" }
   },
   {
     id: "tapo-p110",
@@ -259,16 +259,16 @@ window.PRODUCTS = [
     brand: "TP-Link",
     category: "Smart Home",
     description: "WLAN-Steckdose zum Schalten und Automatisieren angeschlossener Geräte – günstiger Einstieg in Smart-Home-Automationen.",
-    highlights: ["WLAN-Steckdose", "Zeitpläne", "Energie-Messfunktion modellabhängig"],
+    highlights: ["WLAN-Steckdose", "Zeitpläne", "Energieverbrauch messen"],
     badge: "Smart Home",
     priority: "A",
     asin: "B09BFT7NZJ",
-    asinStatus: "recherchiert",
+    asinStatus: "verifiziert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B09BFT7NZJ",
     image: { src: "assets/products/smart-plug.svg", source: "illustration" },
     articleSlugs: ["technik-alltag", "wohnaccessoires", "geschenkideen-zuhause"],
-    research: { priceRange: "ca. 10–20 € einzeln", ratingSnapshot: "4,6/5", reviewCountSnapshot: "600+", checked: "August 2026" }
+    research: { priceRange: "ca. 10–20 € einzeln", ratingSnapshot: "4,6/5", reviewCountSnapshot: "600+", checked: "ASIN-Prüfung 27.08.2026" }
   },
   {
     id: "philips-hue-smart-plug",
@@ -279,15 +279,15 @@ window.PRODUCTS = [
     highlights: ["Hue-Integration", "Licht-Automation", "Einfache Nachrüstung"],
     badge: "Wohnen",
     priority: "A",
-    asin: "",
-    asinStatus: "Bitte per SiteStripe prüfen",
+    asin: "B09CV7QQKB",
+    asinStatus: "verifiziert",
     manufacturerProductNumber: "929003050601",
     ean: "8719514342309",
     affiliateUrl: "",
-    amazonUrl: "https://www.amazon.de/s?k=Philips+Hue+Smart+Plug+929003050601",
+    amazonUrl: "https://www.amazon.de/dp/B09CV7QQKB",
     image: { src: "assets/products/smart-plug.svg", source: "illustration" },
     articleSlugs: ["wohnaccessoires", "technik-alltag", "geschenkideen-zuhause"],
-    research: { priceRange: "ca. 25–35 €", ratingSnapshot: "4,6/5", reviewCountSnapshot: "900+", checked: "August 2026" }
+    research: { priceRange: "ca. 25–35 €", ratingSnapshot: "4,6/5", reviewCountSnapshot: "900+", checked: "ASIN-Prüfung 27.08.2026" }
   },
   {
     id: "echo-dot",
@@ -299,12 +299,12 @@ window.PRODUCTS = [
     badge: "Geschenkidee",
     priority: "A",
     asin: "B09B8X9RGM",
-    asinStatus: "recherchiert",
+    asinStatus: "verifiziert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B09B8X9RGM",
     image: { src: "assets/products/smart-plug.svg", source: "illustration" },
     articleSlugs: ["technik-alltag", "wohnaccessoires", "geschenkideen-zuhause"],
-    research: { priceRange: "stark aktionsabhängig", ratingSnapshot: "modellabhängig", reviewCountSnapshot: "sehr hohe Nachfrage", checked: "August 2026" }
+    research: { priceRange: "stark aktionsabhängig", ratingSnapshot: "modellabhängig", reviewCountSnapshot: "sehr hohe Nachfrage", checked: "ASIN-Prüfung 27.08.2026" }
   },
   {
     id: "fire-tv-stick-hd",
@@ -316,12 +316,12 @@ window.PRODUCTS = [
     badge: "Streaming",
     priority: "A",
     asin: "B0DVJ64ZLT",
-    asinStatus: "recherchiert",
+    asinStatus: "verifiziert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B0DVJ64ZLT",
     image: { src: "assets/products/smart-plug.svg", source: "illustration" },
     articleSlugs: ["technik-alltag", "geschenkideen-zuhause"],
-    research: { priceRange: "aktionsabhängig", ratingSnapshot: "modellabhängig", reviewCountSnapshot: "hohe Nachfrage", checked: "August 2026" }
+    research: { priceRange: "aktionsabhängig", ratingSnapshot: "modellabhängig", reviewCountSnapshot: "hohe Nachfrage", checked: "ASIN-Prüfung 27.08.2026" }
   },
   {
     id: "kindle-paperwhite",
@@ -333,12 +333,12 @@ window.PRODUCTS = [
     badge: "Geschenkidee",
     priority: "A",
     asin: "B0CFPXBJ9Y",
-    asinStatus: "recherchiert",
+    asinStatus: "verifiziert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B0CFPXBJ9Y",
     image: { src: "", source: "amazon" },
     articleSlugs: ["technik-alltag", "geschenkideen-zuhause", "wohnaccessoires"],
-    research: { priceRange: "ca. 150–200+ € je Modell", ratingSnapshot: "modellabhängig", reviewCountSnapshot: "hohe Nachfrage", checked: "August 2026" }
+    research: { priceRange: "ca. 150–200+ € je Modell", ratingSnapshot: "modellabhängig", reviewCountSnapshot: "hohe Nachfrage", checked: "ASIN-Prüfung 27.08.2026" }
   },
   {
     id: "levoit-lvac-200",
@@ -350,11 +350,11 @@ window.PRODUCTS = [
     badge: "Haushalt",
     priority: "A",
     asin: "B0DHZJVSYQ",
-    asinStatus: "recherchiert",
+    asinStatus: "verifiziert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B0DHZJVSYQ",
     image: { src: "assets/products/vacuum.svg", source: "illustration" },
     articleSlugs: ["ordnung-zuhause", "wohnaccessoires"],
-    research: { priceRange: "ca. 100–150 €", ratingSnapshot: "Recherchekandidat", reviewCountSnapshot: "Bestseller-/Nachfrageindikator", checked: "August 2026" }
+    research: { priceRange: "ca. 100–150 €", ratingSnapshot: "Recherchekandidat", reviewCountSnapshot: "Bestseller-/Nachfrageindikator", checked: "ASIN-Prüfung 27.08.2026" }
   }
 ];
