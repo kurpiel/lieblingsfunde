@@ -236,3 +236,20 @@ image: {
 ```
 
 Sobald offizielle Amazon-/Creators-API-Bilder verfügbar sind, kann `src` ersetzt und `source` auf `amazon` oder `creators-api` geändert werden.
+
+
+## Branding: Lieblingsfunde
+
+Die Website ist auf den Namen **Lieblingsfunde** vorbereitet.
+
+### Vor der Veröffentlichung noch erledigen
+
+1. Platzhalter im Impressum durch die echten Pflichtangaben ersetzen.
+2. Datenschutzerklärung auf die tatsächlich verwendeten Dienste abstimmen.
+3. Amazon-Partner-ID in `settings.js` eintragen, sobald verfügbar.
+4. Finale Produkt-ASINs und Aussagen prüfen.
+5. Repository z. B. `lieblingsfunde` erstellen und GitHub Pages aktivieren.
+6. Nach Veröffentlichung die endgültige URL in Canonical-/Open-Graph-Metadaten ergänzen.
+7. Die öffentliche Website auf Mobilgerät und Desktop testen.
+
+`products-admin.html` ist nicht in der Navigation verlinkt, aber auf einer öffentlichen GitHub-Pages-Site technisch weiterhin öffentlich erreichbar.

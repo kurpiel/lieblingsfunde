@@ -7,6 +7,7 @@
 // Solange partnerId leer ist, werden neutrale Amazon-Produktlinks verwendet.
 
 window.SITE_SETTINGS = {
+  siteName: "Lieblingsfunde",
   amazon: {
     partnerId: "lieblingsf032-21",
     domain: "www.amazon.de"
