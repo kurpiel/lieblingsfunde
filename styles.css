@@ -164,7 +164,18 @@ h2 { font-size: clamp(2rem, 4vw, 3.7rem); letter-spacing: -.02em; }
   overflow: hidden;
   position: relative;
 }
-.product-image { width: 100%; height: 100%; object-fit: cover; }
+.product-image-link { display: block; width: 100%; height: 100%; text-decoration: none; }
+.product-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 18px;
+  background: #fff;
+  transition: transform .2s ease;
+}
+.product-card:hover .product-image { transform: scale(1.025); }
+.product-image[hidden] { display: none; }
 .product-badge {
   position: absolute;
   top: 14px;
@@ -275,6 +286,8 @@ h2 { font-size: clamp(2rem, 4vw, 3.7rem); letter-spacing: -.02em; }
 
 /* Produktdaten-Version 2: keine fremden Produktbilder nötig */
 .product-placeholder {
+  width: 100%;
+  height: 100%;
   width: 100%; height: 100%; min-height: 210px;
   display: flex; flex-direction: column; align-items: center; justify-content: center;
   gap: 8px; background: linear-gradient(145deg, var(--accent-soft), var(--surface-strong));

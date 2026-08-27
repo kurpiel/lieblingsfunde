@@ -38,7 +38,7 @@ Alle Produkte stehen in `products.js`.
   affiliateUrl: "", // optionaler SiteStripe-Override
   amazonUrl: "https://www.amazon.de/dp/B09VPHVT2Z",
   description: "Kurze Beschreibung.",
-  image: "",
+  imageUrl: "", // von Amazon bereitgestellte bzw. zulässig nutzbare Bild-URL
   badge: "Top-Auswahl"
 }
 ```
@@ -154,9 +154,33 @@ Reihenfolge der Linkwahl:
 2. Automatisch aus `asin` + Partner-ID.
 3. `amazonUrl` als neutraler Fallback.
 
-### Bilder
+### Produktbilder
 
-Die Seite verwendet zunächst neutrale Marken-Platzhalter. Bitte lade Amazon-Produktbilder nicht einfach herunter und lege sie nicht im GitHub-Repository ab. Nutze nur eigene/rechtmäßig lizenzierte Bilder oder eine von Amazon dafür vorgesehene Schnittstelle.
+Die Produktkarten unterstützen jetzt pro Produkt eine `imageUrl`:
+
+```js
+imageUrl: "https://...",
+```
+
+Solange `imageUrl` leer ist, erscheint automatisch ein neutraler Marken-Platzhalter. Kann ein externes Bild später nicht mehr geladen werden, fällt die Karte ebenfalls automatisch auf diesen Platzhalter zurück.
+
+Das Produktbild ist klickbar und führt auf denselben Amazon-Link wie der Button. Bilder werden mit `loading="lazy"` und `decoding="async"` geladen, damit die Startseite trotz vieler Produkte schnell bleibt. Das Layout verwendet `object-fit: contain`, damit Produktfotos nicht abgeschnitten werden.
+
+**Empfohlener Workflow:** Öffne das konkrete Produkt als Amazon-Partner und verwende nur eine Bildquelle, die Amazon dir für das Partnerprogramm bereitstellt bzw. für deren Nutzung du anderweitig die Rechte hast. Trage die externe Bild-URL in `imageUrl` ein. Lade Amazon-Produktbilder nicht einfach herunter und speichere sie nicht im GitHub-Repository.
+
+Beispiel:
+
+```js
+{
+  id: "anker-737-powerbank",
+  title: "Anker 737 Powerbank (PowerCore 24K)",
+  asin: "B09VPHVT2Z",
+  imageUrl: "HIER-DIE-ZULÄSSIGE-BILD-URL-EINTRAGEN",
+  affiliateUrl: ""
+}
+```
+
+`image` aus älteren Datenständen wird technisch weiterhin unterstützt, für neue Einträge solltest du aber nur noch `imageUrl` verwenden.
 
 ### Preise und Bewertungen
 

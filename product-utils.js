@@ -42,22 +42,45 @@ window.ProductUtils = (() => {
     return "fallback";
   }
 
+  function getImageUrl(product) {
+    // `image` bleibt als Abwärtskompatibilität für ältere Datenstände erhalten.
+    return product.imageUrl?.trim() || product.image?.trim() || "";
+  }
+
   function initials(product) {
     const source = product.brand || product.title || "LF";
     return source.split(/\s+/).slice(0, 2).map((part) => part[0]).join("").toUpperCase();
   }
 
+  function placeholder(product, hidden = false) {
+    return `<div class="product-placeholder" aria-hidden="true"${hidden ? " hidden" : ""}><span>${escapeHtml(initials(product))}</span><small>${escapeHtml(product.brand || "Lieblingsfunde")}</small></div>`;
+  }
+
   function media(product) {
-    if (product.image) {
-      return `<img class="product-image" src="${escapeHtml(product.image)}" alt="${escapeHtml(product.title)}" loading="lazy" />`;
+    const imageUrl = getImageUrl(product);
+    const productUrl = getUrl(product);
+
+    if (!imageUrl) {
+      return placeholder(product);
     }
-    return `<div class="product-placeholder" aria-hidden="true"><span>${escapeHtml(initials(product))}</span><small>${escapeHtml(product.brand || "Lieblingsfunde")}</small></div>`;
+
+    return `
+      <a class="product-image-link" href="${escapeHtml(productUrl)}" target="_blank" rel="nofollow sponsored noopener" aria-label="${escapeHtml(product.title)} bei Amazon ansehen">
+        <img
+          class="product-image"
+          src="${escapeHtml(imageUrl)}"
+          alt="${escapeHtml(product.title)}"
+          loading="lazy"
+          decoding="async"
+          onerror="this.hidden=true;this.nextElementSibling.hidden=false"
+        />
+        ${placeholder(product, true)}
+      </a>`;
   }
 
   function card(product, headingLevel = 3) {
     const heading = Math.max(2, Math.min(6, Number(headingLevel) || 3));
     const mode = getLinkMode(product);
-    const affiliate = mode !== "fallback";
     const highlights = (product.highlights || []).slice(0, 3);
     const note = mode === "manual"
       ? "Werbe-/Affiliate-Link (SiteStripe)"
@@ -86,5 +109,15 @@ window.ProductUtils = (() => {
       </article>`;
   }
 
-  return { escapeHtml, getPartnerId, generatedAffiliateUrl, getUrl, hasAffiliateUrl, getLinkMode, media, card };
+  return {
+    escapeHtml,
+    getPartnerId,
+    generatedAffiliateUrl,
+    getUrl,
+    hasAffiliateUrl,
+    getLinkMode,
+    getImageUrl,
+    media,
+    card
+  };
 })();

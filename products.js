@@ -7,8 +7,10 @@
 // 3) affiliateUrl ist optional und überschreibt den automatisch erzeugten Link (z. B. SiteStripe).
 // 4) amazonUrl ist der neutrale Produkt-/Suchlink als Fallback.
 // 5) Preise/Bewertungen werden NICHT auf der Website angezeigt, weil sie sich ändern.
-// 6) image bleibt bewusst leer. Nutze nur Bilder, für die du die nötigen Rechte hast
-//    bzw. Amazons dafür vorgesehene Produkt-API/Creators API.
+// 6) imageUrl ist für eine von Amazon bereitgestellte bzw. anderweitig zulässig nutzbare Bild-URL.
+//    Amazon-Produktbilder nicht einfach herunterladen und ins Repository kopieren.
+// 7) Ist imageUrl leer oder kann das Bild nicht geladen werden, zeigt die Seite automatisch
+//    einen neutralen Marken-Platzhalter.
 //
 // Die Felder research.* sind nur deine interne Recherchehilfe und werden nicht angezeigt.
 
@@ -26,7 +28,7 @@ window.PRODUCTS = [
     asinStatus: "recherchiert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B09DGBJN2C",
-    image: "",
+    imageUrl: "",
     articleSlugs: ["praktische-kuechenhelfer", "geschenkideen-zuhause"],
     research: { priceRange: "ca. 100–170 €", ratingSnapshot: "4,7/5", reviewCountSnapshot: "8.000+", checked: "August 2026" }
   },
@@ -43,7 +45,7 @@ window.PRODUCTS = [
     asinStatus: "recherchiert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B0CHB7TNWH",
-    image: "",
+    imageUrl: "",
     articleSlugs: ["praktische-kuechenhelfer", "geschenkideen-zuhause"],
     research: { priceRange: "ca. 110–140 €", ratingSnapshot: "4,8/5", reviewCountSnapshot: "200+", checked: "August 2026" }
   },
@@ -60,7 +62,7 @@ window.PRODUCTS = [
     asinStatus: "recherchiert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B0CX8W9ZGF",
-    image: "",
+    imageUrl: "",
     articleSlugs: ["praktische-kuechenhelfer", "kleine-kueche"],
     research: { priceRange: "ca. 110–140 €", ratingSnapshot: "4,8/5", reviewCountSnapshot: "900+", checked: "August 2026" }
   },
@@ -77,7 +79,7 @@ window.PRODUCTS = [
     asinStatus: "recherchiert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B009W0L6KM",
-    image: "",
+    imageUrl: "",
     articleSlugs: ["praktische-kuechenhelfer", "kleine-kueche"],
     research: { priceRange: "ca. 50–70 €", ratingSnapshot: "4,7/5", reviewCountSnapshot: "2.300+", checked: "August 2026" }
   },
@@ -94,7 +96,7 @@ window.PRODUCTS = [
     asinStatus: "recherchiert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B071CGGMRG",
-    image: "",
+    imageUrl: "",
     articleSlugs: ["kaffee-zuhause", "kleine-kueche", "geschenkideen-zuhause"],
     research: { priceRange: "ca. 20–45 € je Größe", ratingSnapshot: "4,7/5", reviewCountSnapshot: "10.000+", checked: "August 2026" }
   },
@@ -111,7 +113,7 @@ window.PRODUCTS = [
     asinStatus: "recherchiert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B07N7V3B8C",
-    image: "",
+    imageUrl: "",
     articleSlugs: ["kaffee-zuhause", "praktische-kuechenhelfer", "geschenkideen-zuhause"],
     research: { priceRange: "ca. 45–60 €", ratingSnapshot: "4,2/5", reviewCountSnapshot: "300+", checked: "August 2026" }
   },
@@ -128,7 +130,7 @@ window.PRODUCTS = [
     asinStatus: "recherchiert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B09MMH65B3",
-    image: "",
+    imageUrl: "",
     articleSlugs: ["kaffee-zuhause", "geschenkideen-zuhause"],
     research: { priceRange: "ca. 60–90 €", ratingSnapshot: "4,3/5", reviewCountSnapshot: "600+", checked: "August 2026" }
   },
@@ -145,7 +147,7 @@ window.PRODUCTS = [
     asinStatus: "recherchiert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B07W5JKHFZ",
-    image: "",
+    imageUrl: "",
     articleSlugs: ["homeoffice-helfer", "schreibtisch-ordnung", "geschenkideen-zuhause"],
     research: { priceRange: "ca. 80–110 €", ratingSnapshot: "4,6/5", reviewCountSnapshot: "1.400+", checked: "August 2026" }
   },
@@ -162,7 +164,7 @@ window.PRODUCTS = [
     asinStatus: "recherchiert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B07W4DGC27",
-    image: "",
+    imageUrl: "",
     articleSlugs: ["homeoffice-helfer", "schreibtisch-ordnung"],
     research: { priceRange: "ca. 45–65 €", ratingSnapshot: "4,7/5", reviewCountSnapshot: "700+ / modellabhängig deutlich mehr", checked: "August 2026" }
   },
@@ -179,7 +181,7 @@ window.PRODUCTS = [
     asinStatus: "recherchiert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B09VPHVT2Z",
-    image: "",
+    imageUrl: "",
     articleSlugs: ["technik-alltag", "usb-c-zubehoer", "homeoffice-helfer", "geschenkideen-zuhause"],
     research: { priceRange: "ca. 70–110 €", ratingSnapshot: "4,7/5", reviewCountSnapshot: "2.600+", checked: "August 2026" }
   },
@@ -196,7 +198,7 @@ window.PRODUCTS = [
     asinStatus: "recherchiert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B0C9CSG3B7",
-    image: "",
+    imageUrl: "",
     articleSlugs: ["technik-alltag", "usb-c-zubehoer", "geschenkideen-zuhause"],
     research: { priceRange: "ca. 30–45 €", ratingSnapshot: "4,8/5", reviewCountSnapshot: "200+", checked: "August 2026" }
   },
@@ -213,7 +215,7 @@ window.PRODUCTS = [
     asinStatus: "recherchiert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B091TV6LWN",
-    image: "",
+    imageUrl: "",
     articleSlugs: ["usb-c-zubehoer", "technik-alltag", "homeoffice-helfer", "schreibtisch-ordnung"],
     research: { priceRange: "ca. 35–60 €", ratingSnapshot: "4,7/5", reviewCountSnapshot: "400+", checked: "August 2026" }
   },
@@ -230,7 +232,7 @@ window.PRODUCTS = [
     asinStatus: "recherchiert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B0D1XLNWP2",
-    image: "",
+    imageUrl: "",
     articleSlugs: ["usb-c-zubehoer", "homeoffice-helfer", "schreibtisch-ordnung", "technik-alltag"],
     research: { priceRange: "ca. 15–40 € je Variante", ratingSnapshot: "4,8/5", reviewCountSnapshot: "200+", checked: "August 2026" }
   },
@@ -247,7 +249,7 @@ window.PRODUCTS = [
     asinStatus: "recherchiert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B0DRNZFYC9",
-    image: "",
+    imageUrl: "",
     articleSlugs: ["homeoffice-helfer", "usb-c-zubehoer", "schreibtisch-ordnung"],
     research: { priceRange: "je Modell ca. 25–100+ €", ratingSnapshot: "4,7/5", reviewCountSnapshot: "300+", checked: "August 2026" }
   },
@@ -264,7 +266,7 @@ window.PRODUCTS = [
     asinStatus: "recherchiert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B09BFT7NZJ",
-    image: "",
+    imageUrl: "",
     articleSlugs: ["technik-alltag", "wohnaccessoires", "geschenkideen-zuhause"],
     research: { priceRange: "ca. 10–20 € einzeln", ratingSnapshot: "4,6/5", reviewCountSnapshot: "600+", checked: "August 2026" }
   },
@@ -283,7 +285,7 @@ window.PRODUCTS = [
     ean: "8719514342309",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/s?k=Philips+Hue+Smart+Plug+929003050601",
-    image: "",
+    imageUrl: "",
     articleSlugs: ["wohnaccessoires", "technik-alltag", "geschenkideen-zuhause"],
     research: { priceRange: "ca. 25–35 €", ratingSnapshot: "4,6/5", reviewCountSnapshot: "900+", checked: "August 2026" }
   },
@@ -300,7 +302,7 @@ window.PRODUCTS = [
     asinStatus: "recherchiert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B09B8X9RGM",
-    image: "",
+    imageUrl: "",
     articleSlugs: ["technik-alltag", "wohnaccessoires", "geschenkideen-zuhause"],
     research: { priceRange: "stark aktionsabhängig", ratingSnapshot: "modellabhängig", reviewCountSnapshot: "sehr hohe Nachfrage", checked: "August 2026" }
   },
@@ -317,7 +319,7 @@ window.PRODUCTS = [
     asinStatus: "recherchiert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B0DVJ64ZLT",
-    image: "",
+    imageUrl: "",
     articleSlugs: ["technik-alltag", "geschenkideen-zuhause"],
     research: { priceRange: "aktionsabhängig", ratingSnapshot: "modellabhängig", reviewCountSnapshot: "hohe Nachfrage", checked: "August 2026" }
   },
@@ -334,7 +336,7 @@ window.PRODUCTS = [
     asinStatus: "recherchiert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B0CFPXBJ9Y",
-    image: "",
+    imageUrl: "",
     articleSlugs: ["technik-alltag", "geschenkideen-zuhause", "wohnaccessoires"],
     research: { priceRange: "ca. 150–200+ € je Modell", ratingSnapshot: "modellabhängig", reviewCountSnapshot: "hohe Nachfrage", checked: "August 2026" }
   },
@@ -351,7 +353,7 @@ window.PRODUCTS = [
     asinStatus: "recherchiert",
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B0DHZJVSYQ",
-    image: "",
+    imageUrl: "",
     articleSlugs: ["ordnung-zuhause", "wohnaccessoires"],
     research: { priceRange: "ca. 100–150 €", ratingSnapshot: "Recherchekandidat", reviewCountSnapshot: "Bestseller-/Nachfrageindikator", checked: "August 2026" }
   }
