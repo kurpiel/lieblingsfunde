@@ -1,8 +1,6 @@
 // ============================================================
 // SAMMLUNGEN / PINTEREST-LANDINGPAGES HIER PFLEGEN
 // ============================================================
-// Eine Sammlung ist eine thematische Seite, auf die du direkt von Pinterest
-// verlinken kannst. Produkte werden über category oder productIds ausgewählt.
 
 window.COLLECTIONS = [
   {
@@ -10,23 +8,30 @@ window.COLLECTIONS = [
     page: "kueche.html",
     title: "Praktische Küchenhelfer",
     eyebrow: "Küche",
-    description: "Kleine Helfer, die Kochen, Backen und Kaffee im Alltag angenehmer machen.",
-    category: "Küche"
+    description: "Ausgewählte Küchen- und Kaffeeprodukte mit hohem Alltagsnutzen.",
+    productIds: [
+      "ninja-af400eu", "cosori-dual-zone", "cosori-turboblaze", "bosch-ergomixx-msm67170",
+      "bialetti-moka-express", "wmf-stelio-milchaufschaeumer", "zwilling-enfinigy-milchaufschaeumer"
+    ]
   },
   {
     slug: "wohnen",
     page: "wohnen.html",
-    title: "Schöne Ideen für Zuhause",
+    title: "Schöne & praktische Ideen für Zuhause",
     eyebrow: "Wohnen",
-    description: "Ausgewählte Wohnaccessoires und praktische Dinge für ein ruhiges, schönes Zuhause.",
-    category: "Wohnen"
+    description: "Smart-Home- und Haushaltsprodukte, die sich gut in Wohn- und Ordnungsinhalte integrieren lassen.",
+    productIds: ["philips-hue-smart-plug", "tapo-p110", "echo-dot", "kindle-paperwhite", "levoit-lvac-200"]
   },
   {
     slug: "technik",
     page: "technik.html",
     title: "Nützliche Technik-Favoriten",
     eyebrow: "Technik",
-    description: "Kompakte Technik und Zubehör, die im Alltag wirklich praktisch sein können.",
-    category: "Technik"
+    description: "Powerbanks, USB-C-Zubehör und kompakte Technik mit klarer Kaufintention.",
+    productIds: [
+      "anker-737-powerbank", "anker-nano-10000", "ugreen-nexode-100w", "ugreen-revodok-pro",
+      "ugreen-usb-c-dock", "tapo-p110", "echo-dot", "fire-tv-stick-hd", "kindle-paperwhite",
+      "logitech-mx-master-3s", "logitech-lift"
+    ]
   }
 ];

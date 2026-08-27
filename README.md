@@ -2,26 +2,50 @@
 
 Eine kleine statische Website, die direkt über GitHub Pages veröffentlicht werden kann. Kein npm, kein Build und kein Backend nötig.
 
-## 1. Produkte bearbeiten
+## 1. Amazon Partner-ID einmal eintragen
+
+Öffne `settings.js` und trage deine Partner-ID ein:
+
+```js
+window.SITE_SETTINGS = {
+  amazon: {
+    partnerId: "DEINE-PARTNER-ID-21",
+    domain: "www.amazon.de"
+  }
+};
+```
+
+Danach erzeugt die Website für jedes Produkt mit ASIN automatisch einen Partnerlink nach dem Muster:
+
+```text
+https://www.amazon.de/dp/ASIN/ref=nosim?tag=DEINE-PARTNER-ID-21
+```
+
+Solange die Partner-ID leer ist, bleibt die Seite im sicheren Fallback-Modus und verwendet neutrale Amazon-Produkt- oder Suchlinks.
+
+`affiliateUrl` in `products.js` bleibt als optionaler Override erhalten. Wenn du für ein einzelnes Produkt lieber einen SiteStripe-Link verwendest, trägst du ihn dort ein; er hat Vorrang vor dem automatisch erzeugten Link.
+
+## 2. Produkte bearbeiten
 
 Alle Produkte stehen in `products.js`.
 
 ```js
 {
-  id: "usb-c-ladegeraet",
-  title: "USB-C Ladegerät",
+  id: "anker-737-powerbank",
+  title: "Anker 737 Powerbank (PowerCore 24K)",
   category: "Technik",
+  asin: "B09VPHVT2Z",
+  affiliateUrl: "", // optionaler SiteStripe-Override
+  amazonUrl: "https://www.amazon.de/dp/B09VPHVT2Z",
   description: "Kurze Beschreibung.",
-  image: "https://...",
-  url: "DEIN-AMAZON-AFFILIATE-LINK",
-  price: "Bei Amazon ansehen",
-  badge: "Favorit"
+  image: "",
+  badge: "Top-Auswahl"
 }
 ```
 
 `id` sollte eindeutig sein. `badge` ist optional.
 
-## 2. Pinterest-Landingpages bearbeiten
+## 3. Pinterest-Landingpages bearbeiten
 
 Die Sammlungen stehen zentral in `collections.js`. Die mitgelieferten Seiten sind:
 
@@ -63,7 +87,7 @@ Für eine komplett neue Landingpage kopierst du z. B. `kueche.html`, benennst si
 
 Anschließend ergänzt du die Sammlung in `collections.js`.
 
-## 3. GitHub Pages veröffentlichen
+## 4. GitHub Pages veröffentlichen
 
 1. Neues GitHub Repository anlegen.
 2. Alle Dateien aus diesem Ordner in das Repository hochladen.
@@ -74,7 +98,7 @@ Anschließend ergänzt du die Sammlung in `collections.js`.
 
 Danach ist die Seite über deine GitHub-Pages-Adresse erreichbar.
 
-## 4. Pinterest verwenden
+## 5. Pinterest verwenden
 
 Verlinke einen Pin möglichst direkt auf die passende Landingpage, z. B.:
 
@@ -84,7 +108,7 @@ Verlinke einen Pin möglichst direkt auf die passende Landingpage, z. B.:
 
 So landet der Besucher direkt bei den zum Pin passenden Empfehlungen.
 
-## 5. Vor Veröffentlichung
+## 6. Vor Veröffentlichung
 
 - Amazon-Affiliate-Links eintragen.
 - Impressum und Datenschutz vervollständigen.
@@ -95,6 +119,7 @@ So landet der Besucher direkt bei den zum Pin passenden Empfehlungen.
 ## Dateien
 
 - `index.html` – Startseite
+- `settings.js` – deine zentrale Amazon Partner-ID
 - `products.js` – zentrale Produktdaten
 - `collections.js` – zentrale Landingpage-/Sammlungsdaten
 - `script.js` – Startseitenlogik
@@ -106,3 +131,43 @@ So landet der Besucher direkt bei den zum Pin passenden Empfehlungen.
 
 ## Ratgeber / Originalinhalte
 Die Version enthält 10 eigenständige Ratgeberseiten. Passe die Texte an deine tatsächliche Auswahl und Erfahrung an, bevor du sie veröffentlichst. Behaupte insbesondere keine eigenen Tests oder Erfahrungen, die du nicht gemacht hast. Konkrete Amazon-Produkte und Partnerlinks kannst du anschließend passend ergänzen.
+
+## Produktdaten – neue Version
+
+Die Seite enthält jetzt 20 recherchierte Kernprodukte. Alle Produktdaten liegen zentral in `products.js`.
+
+### Automatische Partnerlinks
+
+Für 19 der 20 Kernprodukte ist eine konkrete recherchierte ASIN hinterlegt. Sobald du in `settings.js` deine Partner-ID einträgst, werden deren Affiliate-Links automatisch erzeugt.
+
+Beim **Philips Hue Smart Plug** ist die Hersteller-Produktnummer hinterlegt, aber die ASIN bewusst noch offen. Hier solltest du die konkrete Amazon.de-Variante selbst öffnen und entweder die ASIN ergänzen oder einen SiteStripe-Link bei `affiliateUrl` eintragen. So vermeiden wir, versehentlich auf eine falsche Variante zu verlinken.
+
+Ein manueller SiteStripe-Link ist weiterhin jederzeit möglich:
+
+```js
+affiliateUrl: "https://amzn.to/DEIN-LINK",
+```
+
+Reihenfolge der Linkwahl:
+
+1. `affiliateUrl` (manuell/SiteStripe), falls vorhanden.
+2. Automatisch aus `asin` + Partner-ID.
+3. `amazonUrl` als neutraler Fallback.
+
+### Bilder
+
+Die Seite verwendet zunächst neutrale Marken-Platzhalter. Bitte lade Amazon-Produktbilder nicht einfach herunter und lege sie nicht im GitHub-Repository ab. Nutze nur eigene/rechtmäßig lizenzierte Bilder oder eine von Amazon dafür vorgesehene Schnittstelle.
+
+### Preise und Bewertungen
+
+`research.priceRange`, `research.ratingSnapshot` und `research.reviewCountSnapshot` dienen ausschließlich deiner internen Auswahl. Sie werden bewusst nicht auf der Website angezeigt, da diese Werte schnell veralten.
+
+### Ratgeber-Zuordnung
+
+Über `articleSlugs` legst du fest, in welchen Ratgebern ein Produkt automatisch angezeigt wird. Beispiel:
+
+```js
+articleSlugs: ["technik-alltag", "usb-c-zubehoer", "homeoffice-helfer"]
+```
+
+Damit musst du ein Produkt nur einmal pflegen und kannst es auf mehreren Pinterest-Landingpages einsetzen.

@@ -62,30 +62,12 @@ function renderFilters() {
 function renderProducts() {
   const filtered = products.filter((product) => {
     const matchesCategory = activeCategory === "Alle" || product.category === activeCategory;
-    const haystack = `${product.title} ${product.description} ${product.category}`.toLowerCase();
+    const haystack = `${product.title} ${product.description} ${product.category} ${product.brand || ""}`.toLowerCase();
     const matchesQuery = haystack.includes(query.toLowerCase());
     return matchesCategory && matchesQuery;
   });
 
-  grid.innerHTML = filtered.map((product) => `
-    <article class="product-card">
-      <div class="product-image-wrap">
-        <img class="product-image" src="${escapeHtml(product.image)}" alt="${escapeHtml(product.title)}" loading="lazy" />
-        ${product.badge ? `<span class="product-badge">${escapeHtml(product.badge)}</span>` : ""}
-      </div>
-      <div class="product-body">
-        <p class="product-category">${escapeHtml(product.category)}</p>
-        <h3 class="product-title">${escapeHtml(product.title)}</h3>
-        <p class="product-description">${escapeHtml(product.description)}</p>
-        <div class="product-footer">
-          ${product.price ? `<span class="product-price">${escapeHtml(product.price)}</span>` : ""}
-          <a class="button button-secondary" href="${escapeHtml(product.url)}" target="_blank" rel="nofollow sponsored noopener">Bei Amazon ansehen</a>
-          <small class="product-note">Affiliate-Link · Preis kann sich ändern</small>
-        </div>
-      </div>
-    </article>
-  `).join("");
-
+  grid.innerHTML = filtered.map((product) => window.ProductUtils.card(product, 3)).join("");
   emptyState.hidden = filtered.length !== 0;
 }
 
