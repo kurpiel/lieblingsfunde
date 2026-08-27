@@ -1,0 +1,12 @@
+{
+  "name": "lieblingsfunde",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Statische GitHub-Pages-Seite für Lieblingsfunde",
+  "scripts": {
+    "build": "node scripts/build.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
