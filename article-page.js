@@ -4,7 +4,7 @@ const matches = products.filter((product) => product.articleSlugs?.includes(curr
 const articleList = document.querySelector(".article-list");
 const disclosure = document.querySelector(".disclosure");
 
-if (matches.length && disclosure) {
+if (matches.length && disclosure && !document.querySelector(".article-products")) {
   const section = document.createElement("section");
   section.className = "article-products";
   section.innerHTML = `
