@@ -356,5 +356,37 @@ window.PRODUCTS = [
     image: { src: "assets/products/vacuum.svg", source: "illustration" },
     articleSlugs: ["ordnung-zuhause", "wohnaccessoires"],
     research: { priceRange: "ca. 100–150 €", ratingSnapshot: "Recherchekandidat", reviewCountSnapshot: "Bestseller-/Nachfrageindikator", checked: "ASIN-Prüfung 27.08.2026" }
+  },
+  {
+    id: "rotho-cauma-kuehlschrank-organizer",
+    title: "Rotho CAUMA Kühlschrank-Organizer Set",
+    brand: "Rotho",
+    category: "Küche",
+    description:
+      "Transparentes Kühlschrank-Organizer-Set für mehr Übersicht bei Lebensmitteln – praktisch zum Gruppieren, Stapeln und schnellen Herausnehmen einzelner Bereiche.",
+    highlights: [
+      "Transparent für schnellen Überblick",
+      "Stapelbar",
+      "Für mehr Ordnung im Kühlschrank"
+    ],
+    badge: "Ordnung",
+    priority: "A",
+
+    asin: "",
+    asinStatus: "nicht verifiziert",
+
+    affiliateUrl: "https://link.amazon/B05SF2eqf",
+    amazonUrl: "https://www.amazon.de/s?k=Rotho+CAUMA+K%C3%BChlschrank+Organizer",
+
+    image: { src: "", source: "amazon" },
+
+    articleSlugs: ["kuehlschrank-organisieren"],
+
+    research: {
+      priceRange: "ca. 50–60 €",
+      ratingSnapshot: "",
+      reviewCountSnapshot: "",
+      checked: "Produktprüfung 04.09.2026"
+    }
   }
 ];
