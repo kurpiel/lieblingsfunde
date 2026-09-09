@@ -794,5 +794,184 @@ window.PRODUCTS = [
       reviewCountSnapshot: "",
       checked: "Produktprüfung 09.09.2026"
     }
-  }
+  },
+  {
+    id: "ugreen-magnetische-kabelhalter",
+    title: "UGREEN Magnetische Kabelhalter",
+    category: "Alltag",
+    description:
+      "Magnetische Kabelclips für Ladekabel und andere häufig verwendete Kabel – sorgen für einen festen Platz und verhindern, dass Kabel hinter Tisch oder Möbeln verschwinden.",
+    highlights: [
+      "Magnetischer Verschluss",
+      "Selbstklebende Befestigung",
+      "6er-Pack",
+    ],
+    asin: "B0DXDVLV4W",
+    amazonUrl: "https://www.amazon.de/dp/B0DXDVLV4W",
+    affiliateUrl: "https://link.amazon/B053FbSNS",
+    badge: "Kabelorganisation",
+    articleSlugs: ["geniale-alltagshelfer"],
+  },
+
+  {
+    id: "nelko-p21-etikettendrucker",
+    title: "Nelko P21 Mini-Etikettendrucker",
+    category: "Alltag",
+    description:
+      "Kompakter Etikettendrucker zum Beschriften von Vorräten, Boxen, Schubladen und vielen anderen Dingen im Haushalt – praktisch für mehr Übersicht und feste Plätze.",
+    highlights: [
+      "Kompaktes Format",
+      "Für selbstklebende Etiketten",
+      "Ideal zum Organisieren",
+    ],
+    asin: "B0C3L93F2Q",
+    amazonUrl: "https://www.amazon.de/dp/B0C3L93F2Q",
+    affiliateUrl: "https://link.amazon/B0a9gYQQw",
+    badge: "Organisation",
+    articleSlugs: ["geniale-alltagshelfer"],
+  },
+
+  {
+    id: "suright-bewegungslicht",
+    title: "Suright wiederaufladbares Bewegungslicht",
+    category: "Alltag",
+    description:
+      "Wiederaufladbares Licht mit Bewegungsmelder für dunkle Bereiche im Zuhause – beispielsweise für Flur, Schlafzimmer, Schrank oder andere Stellen ohne passende Beleuchtung.",
+    highlights: [
+      "Mit Bewegungsmelder",
+      "Wiederaufladbar",
+      "Flexibel einsetzbar",
+    ],
+    asin: "B0CTHP1FQK",
+    amazonUrl: "https://www.amazon.de/dp/B0CTHP1FQK",
+    affiliateUrl: "https://link.amazon/B0agP29xH",
+    badge: "Licht",
+    articleSlugs: ["geniale-alltagshelfer"],
+  },
+
+  {
+    id: "bonsenkitchen-vakuumierer",
+    title: "Bonsenkitchen Vakuumierer",
+    category: "Küche",
+    description:
+      "Kompakter Vakuumierer zum luftdichten Verpacken von Lebensmitteln – praktisch für Vorräte, angebrochene Lebensmittel und die platzsparende Aufbewahrung.",
+    highlights: [
+      "Vakuumieren und Verschweißen",
+      "Kompakte Bauweise",
+      "Für verschiedene Lebensmittel",
+    ],
+    asin: "B0DBVDJ35T",
+    amazonUrl: "https://www.amazon.de/dp/B0DBVDJ35T",
+    affiliateUrl: "https://link.amazon/B0e5l9PIf",
+    badge: "Küchenhelfer",
+    articleSlugs: ["geniale-alltagshelfer"],
+  },
+
+  {
+    id: "ace2ace-tierhaarentferner",
+    title: "ACE2ACE wiederverwendbarer Tierhaarentferner",
+    category: "Haushalt",
+    description:
+      "Wiederverwendbarer Fussel- und Tierhaarentferner für Sofa, Kleidung und andere Textilien – kommt ohne ständig neue Kleberollen aus.",
+    highlights: [
+      "Wiederverwendbar",
+      "Für Tierhaare und Fusseln",
+      "Für verschiedene Textilien",
+    ],
+    asin: "B0819XVK92",
+    amazonUrl: "https://www.amazon.de/dp/B0819XVK92",
+    affiliateUrl: "https://link.amazon/B06dMKIVv",
+    badge: "Tierhaare",
+    articleSlugs: ["geniale-alltagshelfer"],
+  },
+
+  {
+    id: "aike-seifenspender",
+    title: "AIKE automatischer Seifenspender",
+    category: "Haushalt",
+    description:
+      "Berührungsloser Seifenspender mit Sensor – gibt Seife automatisch aus und ist besonders praktisch in Küche oder Badezimmer.",
+    highlights: [
+      "Berührungslose Bedienung",
+      "Automatischer Sensor",
+      "USB-aufladbar",
+    ],
+    asin: "B0BFL4JMSQ",
+    amazonUrl: "https://www.amazon.de/dp/B0BFL4JMSQ",
+    affiliateUrl: "https://link.amazon/B0hqb1dPr",
+    badge: "Hygiene",
+    articleSlugs: ["geniale-alltagshelfer"],
+  },
+
+  {
+    id: "silikon-haarfaenger",
+    title: "Silikon-Haarfänger für den Abfluss",
+    category: "Haushalt",
+    description:
+      "Einfacher Haarfänger für Dusche oder Badewanne – hält Haare bereits an der Oberfläche zurück und lässt sich nach der Verwendung unkompliziert reinigen.",
+    highlights: [
+      "Für Dusche und Badewanne",
+      "Wiederverwendbar",
+      "Einfach zu reinigen",
+    ],
+    asin: "B09FLCGXHB",
+    amazonUrl: "https://www.amazon.de/dp/B09FLCGXHB",
+    affiliateUrl: "https://link.amazon/B001DKl5v",
+    badge: "Bad",
+    articleSlugs: ["geniale-alltagshelfer"],
+  },
+
+  {
+    id: "elektrisches-stabfeuerzeug",
+    title: "Wiederaufladbares elektrisches Stabfeuerzeug",
+    category: "Alltag",
+    description:
+      "Elektrisches Stabfeuerzeug zum Anzünden von Kerzen und schwer erreichbaren Dochten – mit langem Hals und wiederaufladbarem Akku.",
+    highlights: [
+      "Elektrische Zündung",
+      "Wiederaufladbar",
+      "Langer Hals",
+    ],
+    asin: "B07NL34W5L",
+    amazonUrl: "https://www.amazon.de/dp/B07NL34W5L",
+    affiliateUrl: "https://link.amazon/B0fZsOKZM",
+    badge: "Praktisch",
+    articleSlugs: ["geniale-alltagshelfer"],
+  },
+
+  {
+    id: "acemining-besenhalter",
+    title: "AceMining selbstklebender Besenhalter",
+    category: "Haushalt",
+    description:
+      "Wandhalterung für Besen, Wischer und andere Haushaltsgeräte – schafft einen festen Aufbewahrungsplatz und nutzt freie Wandflächen.",
+    highlights: [
+      "Selbstklebende Montage",
+      "Für Besen und Wischer",
+      "Platzsparende Aufbewahrung",
+    ],
+    asin: "B0B7P9D1DX",
+    amazonUrl: "https://www.amazon.de/dp/B0B7P9D1DX",
+    affiliateUrl: "https://link.amazon/B09l7EmL3",
+    badge: "Aufbewahrung",
+    articleSlugs: ["geniale-alltagshelfer"],
+  },
+
+  {
+    id: "canslab-ultrablade-pro",
+    title: "Canslab Ultrablade PRO elektrischer Dosenöffner",
+    category: "Küche",
+    description:
+      "Elektrischer Dosenöffner mit automatischer Bedienung – öffnet Konservendosen ohne das typische manuelle Drehen eines klassischen Dosenöffners.",
+    highlights: [
+      "Elektrischer Betrieb",
+      "Automatisches Öffnen",
+      "Einfache Bedienung",
+    ],
+    asin: "B0G1LY5B3N",
+    amazonUrl: "https://www.amazon.de/dp/B0G1LY5B3N",
+    affiliateUrl: "https://link.amazon/B03FtH2YZ",
+    badge: "Küchenhelfer",
+    articleSlugs: ["geniale-alltagshelfer"],
+  },
 ];

@@ -83,4 +83,11 @@ window.ARTICLES = [
         description:
             "Zehn praktische Alltagshelfer für typische kleine Probleme im Haushalt – von Reinigung und Ordnung bis zu Licht und kleinen Reparaturen.",
     },
+    {
+        slug: "geniale-alltagshelfer",
+        title: "10 geniale Alltagshelfer, die du nicht mehr missen möchtest",
+        category: "Alltag",
+        description:
+            "Zehn clevere kleine Alltagshelfer, die typische Probleme zu Hause überraschend einfach lösen.",
+    },
 ];
