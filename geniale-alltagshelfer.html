@@ -23,8 +23,16 @@
 </head>
 
 <body>
-  <header class="site-header"><a class="brand" href="index.html">Lieblingsfunde<span>.</span></a>
-    <nav class="nav"><a href="index.html#ratgeber">Ratgeber</a><a href="index.html#produkte">Produkte</a></nav>
+  <header class="site-header">
+    <a class="brand-lockup" href="index.html" aria-label="Lieblingsfunde Startseite">
+      <img class="brand-logo" src="assets/brand/lieblingsfunde-logo.png" alt="Lieblingsfunde – Wohnen & praktische Ideen">
+      <span class="brand-claim">Schöner Alltag.<br>Einfach gute Ideen.</span>
+    </a>
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a href="index.html#sammlungen">Sammlungen</a>
+      <a href="index.html#ratgeber">Ratgeber</a>
+      <a href="index.html#produkte">Produkte</a>
+    </nav>
   </header>
   <main class="article-main">
     <article>
@@ -186,8 +194,21 @@
       </section>
     </article>
   </main>
-  <footer class="site-footer"><a href="index.html">← Startseite</a>
-    <div><a href="impressum.html">Impressum</a> <a href="datenschutz.html">Datenschutz</a></div>
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <img class="footer-logo" src="assets/brand/lieblingsfunde-logo.png" alt="">
+      <div class="footer-copy">
+        <strong>Schöner Alltag. Einfach gute Ideen.</strong>
+        <span>© <span id="year"></span> Lieblingsfunde</span>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="index.html#ratgeber">Ratgeber</a>
+      <a href="index.html#sammlungen">Sammlungen</a>
+      <a href="https://www.pinterest.de/deinelieblingsfunde/" target="_blank" rel="noopener">Pinterest</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </div>
   </footer>
   <script src="settings.js"></script>
   <script src="products.js"></script>

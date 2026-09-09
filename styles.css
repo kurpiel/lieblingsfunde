@@ -304,3 +304,162 @@ h2 { font-size: clamp(2rem, 4vw, 3.7rem); letter-spacing: -.02em; }
 .article-product-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 18px; }
 .article-product-grid .product-image-wrap { min-height: 210px; }
 @media (max-width: 700px) { .article-product-grid { grid-template-columns: 1fr; } }
+
+
+/* ===== Lieblingsfunde brand refresh ===== */
+.site-header {
+  padding: 10px 18px;
+}
+.brand-lockup {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+  text-decoration: none;
+}
+.brand-logo {
+  width: auto;
+  height: 68px;
+  flex: 0 0 auto;
+}
+.brand-claim {
+  max-width: 150px;
+  color: var(--accent);
+  font-size: .67rem;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: .095em;
+  text-transform: uppercase;
+}
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.button-ghost {
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,.52);
+  color: var(--text);
+}
+.button-ghost:hover { background: var(--surface-strong); }
+.hero-card {
+  display: grid;
+  place-items: center;
+}
+.hero-brand-mark {
+  width: min(66%, 300px);
+  opacity: .97;
+  filter: drop-shadow(0 16px 30px rgba(44,43,38,.08));
+  transform: translateY(-20px);
+}
+.trust-strip {
+  margin: -12px 0 64px;
+  padding: 20px 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: rgba(255,255,255,.44);
+}
+.trust-item {
+  padding: 4px 22px;
+  display: grid;
+  gap: 3px;
+  border-right: 1px solid var(--line);
+}
+.trust-item:first-child { padding-left: 4px; }
+.trust-item:last-child { border-right: 0; }
+.trust-item strong { color: var(--accent); font-size: .92rem; }
+.trust-item span { color: var(--muted); font-size: .84rem; }
+.editorial-section {
+  margin: 24px 0 72px;
+  padding: 46px;
+  border-radius: 34px;
+  background: linear-gradient(145deg, #fffdf9, #edf3ef);
+  border: 1px solid var(--line);
+}
+.editorial-grid {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.editorial-point {
+  padding: 22px;
+  border-radius: var(--radius-md);
+  background: rgba(255,255,255,.72);
+}
+.editorial-point span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--warm);
+  font-family: "Playfair Display", serif;
+  font-size: 1.65rem;
+}
+.editorial-point strong { display: block; margin-bottom: 6px; }
+.editorial-point p { margin: 0; color: var(--muted); font-size: .92rem; }
+.pinterest-section {
+  margin: 0 0 72px;
+  padding: 42px 46px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 32px;
+  align-items: center;
+  border-radius: 34px;
+  background: #efe4d8;
+}
+.pinterest-section p { max-width: 680px; margin: 10px 0 0; color: #655f58; }
+.pinterest-section .button { white-space: nowrap; }
+
+.article-item { padding: 34px 0; }
+.article-number {
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 700;
+}
+.article-recommendation { box-shadow: 0 8px 24px rgba(44,43,38,.035); }
+
+.site-footer {
+  margin-top: 30px;
+  padding: 34px 0 42px;
+  align-items: center;
+}
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.footer-logo { width: auto; height: 58px; }
+.footer-copy { display: grid; gap: 2px; }
+.footer-copy strong { color: var(--text); font-size: .92rem; }
+.footer-copy span { font-size: .78rem; }
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 14px 18px !important;
+}
+
+@media (max-width: 900px) {
+  .brand-logo { height: 62px; }
+  .brand-claim { display: none; }
+  .trust-strip { grid-template-columns: 1fr; gap: 14px; }
+  .trust-item, .trust-item:first-child {
+    padding: 0 0 14px;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .trust-item:last-child { padding-bottom: 0; border-bottom: 0; }
+  .editorial-grid { grid-template-columns: 1fr; }
+  .pinterest-section { grid-template-columns: 1fr; }
+}
+@media (max-width: 620px) {
+  .site-header { padding: 8px 14px; align-items: center; }
+  .brand-logo { height: 54px; }
+  .hero-brand-mark { width: min(72%, 260px); }
+  .editorial-section, .pinterest-section { padding: 28px; border-radius: 26px; }
+  .site-footer { align-items: flex-start; }
+  .footer-links { justify-content: flex-start; }
+  .footer-logo { height: 52px; }
+}
