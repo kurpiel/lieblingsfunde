@@ -798,6 +798,7 @@ window.PRODUCTS = [
   {
     id: "ugreen-magnetische-kabelhalter",
     title: "UGREEN Magnetische Kabelhalter",
+    brand: "UGREEN",
     category: "Alltag",
     description:
       "Magnetische Kabelclips für Ladekabel und andere häufig verwendete Kabel – sorgen für einen festen Platz und verhindern, dass Kabel hinter Tisch oder Möbeln verschwinden.",
@@ -816,6 +817,7 @@ window.PRODUCTS = [
   {
     id: "nelko-p21-etikettendrucker",
     title: "Nelko P21 Mini-Etikettendrucker",
+    brand: "Nelko",
     category: "Alltag",
     description:
       "Kompakter Etikettendrucker zum Beschriften von Vorräten, Boxen, Schubladen und vielen anderen Dingen im Haushalt – praktisch für mehr Übersicht und feste Plätze.",
@@ -834,6 +836,7 @@ window.PRODUCTS = [
   {
     id: "suright-bewegungslicht",
     title: "Suright wiederaufladbares Bewegungslicht",
+    brand: "Suright",
     category: "Alltag",
     description:
       "Wiederaufladbares Licht mit Bewegungsmelder für dunkle Bereiche im Zuhause – beispielsweise für Flur, Schlafzimmer, Schrank oder andere Stellen ohne passende Beleuchtung.",
@@ -852,6 +855,7 @@ window.PRODUCTS = [
   {
     id: "bonsenkitchen-vakuumierer",
     title: "Bonsenkitchen Vakuumierer",
+    brand: "Bonsenkitchen",
     category: "Küche",
     description:
       "Kompakter Vakuumierer zum luftdichten Verpacken von Lebensmitteln – praktisch für Vorräte, angebrochene Lebensmittel und die platzsparende Aufbewahrung.",
@@ -870,6 +874,7 @@ window.PRODUCTS = [
   {
     id: "ace2ace-tierhaarentferner",
     title: "ACE2ACE wiederverwendbarer Tierhaarentferner",
+    brand: "ACE2ACE",
     category: "Haushalt",
     description:
       "Wiederverwendbarer Fussel- und Tierhaarentferner für Sofa, Kleidung und andere Textilien – kommt ohne ständig neue Kleberollen aus.",
@@ -888,6 +893,7 @@ window.PRODUCTS = [
   {
     id: "aike-seifenspender",
     title: "AIKE automatischer Seifenspender",
+    brand: "AIKE",
     category: "Haushalt",
     description:
       "Berührungsloser Seifenspender mit Sensor – gibt Seife automatisch aus und ist besonders praktisch in Küche oder Badezimmer.",
@@ -906,6 +912,7 @@ window.PRODUCTS = [
   {
     id: "silikon-haarfaenger",
     title: "Silikon-Haarfänger für den Abfluss",
+    brand: "Silikon",
     category: "Haushalt",
     description:
       "Einfacher Haarfänger für Dusche oder Badewanne – hält Haare bereits an der Oberfläche zurück und lässt sich nach der Verwendung unkompliziert reinigen.",
@@ -924,6 +931,7 @@ window.PRODUCTS = [
   {
     id: "elektrisches-stabfeuerzeug",
     title: "Wiederaufladbares elektrisches Stabfeuerzeug",
+    brand: "MEIRUBY",
     category: "Alltag",
     description:
       "Elektrisches Stabfeuerzeug zum Anzünden von Kerzen und schwer erreichbaren Dochten – mit langem Hals und wiederaufladbarem Akku.",
@@ -942,6 +950,7 @@ window.PRODUCTS = [
   {
     id: "acemining-besenhalter",
     title: "AceMining selbstklebender Besenhalter",
+    brand: "AceMining",
     category: "Haushalt",
     description:
       "Wandhalterung für Besen, Wischer und andere Haushaltsgeräte – schafft einen festen Aufbewahrungsplatz und nutzt freie Wandflächen.",
@@ -960,6 +969,7 @@ window.PRODUCTS = [
   {
     id: "canslab-ultrablade-pro",
     title: "Canslab Ultrablade PRO elektrischer Dosenöffner",
+    brand: "Canslab",
     category: "Küche",
     description:
       "Elektrischer Dosenöffner mit automatischer Bedienung – öffnet Konservendosen ohne das typische manuelle Drehen eines klassischen Dosenöffners.",
