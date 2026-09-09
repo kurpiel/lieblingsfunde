@@ -1,0 +1,84 @@
+{
+  "name": "Lieblingsfunde Pinterest Master",
+  "version": 1,
+  "canvas": {
+    "width": 1024,
+    "height": 1536,
+    "aspect_ratio": "2:3"
+  },
+  "reference": "Wohnaccessoires-Pin",
+  "zones_px": {
+    "number_10": [
+      28,
+      40,
+      275,
+      285
+    ],
+    "headline": [
+      275,
+      70,
+      985,
+      265
+    ],
+    "benefit_row": [
+      70,
+      285,
+      960,
+      335
+    ],
+    "callout_left": [
+      55,
+      375,
+      290,
+      650
+    ],
+    "badge_1_right": [
+      885,
+      380,
+      1015,
+      510
+    ],
+    "badge_2_right": [
+      885,
+      525,
+      1015,
+      655
+    ],
+    "badge_3_right": [
+      885,
+      670,
+      1015,
+      805
+    ],
+    "lifestyle_scene": [
+      0,
+      335,
+      1024,
+      1435
+    ],
+    "footer_brush": [
+      0,
+      1360,
+      1024,
+      1536
+    ],
+    "logo_center": [
+      360,
+      1215,
+      675,
+      1515
+    ]
+  },
+  "rules": [
+    "Große 10 links oben",
+    "Zweizeilige Hauptüberschrift oben rechts",
+    "Drei kurze Benefits unter der Überschrift",
+    "Handschriftlicher Callout links auf cremefarbenem Pinselstrich",
+    "Drei runde Benefit-Badges rechts vertikal",
+    "Eine zusammenhängende warme Lifestyle-Szene; keine Produktkarten",
+    "Organischer heller Footer",
+    "Originales Lieblingsfunde-Logo unverändert unten mittig",
+    "Kein Fake-Button und keine erfundene Domain",
+    "Palette: Creme, Beige, gedecktes Dunkelgrün, Terrakotta und Naturholz"
+  ]
+}
