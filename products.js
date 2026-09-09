@@ -658,5 +658,141 @@ window.PRODUCTS = [
       reviewCountSnapshot: "",
       checked: "Produktprüfung 09.09.2026"
     }
+  },
+
+  {
+    id: "philips-fusselrasierer",
+    title: "Philips Fusselrasierer",
+    brand: "Philips",
+    category: "Alltag",
+    description:
+      "Praktischer Fusselrasierer zum Entfernen von Knötchen und Fusseln auf Kleidung, Decken und anderen Textilien – eine einfache Möglichkeit, häufig genutzte Stoffe wieder gepflegter aussehen zu lassen.",
+    highlights: [
+      "Für Kleidung und Heimtextilien",
+      "Große Klingenfläche",
+      "Mehrere Maschengrößen"
+    ],
+    badge: "Textilpflege",
+    priority: "A",
+    asin: "B07M8J529S",
+    asinStatus: "verifiziert",
+    affiliateUrl: "https://link.amazon/B0hM3RNM6",
+    amazonUrl: "https://www.amazon.de/dp/B07M8J529S",
+    image: { src: "", source: "amazon" },
+    articleSlugs: ["praktische-helfer-zuhause"],
+    research: {
+      priceRange: "",
+      ratingSnapshot: "",
+      reviewCountSnapshot: "",
+      checked: "Produktprüfung 09.09.2026"
+    }
+  },
+  {
+    id: "kaercher-fenstersauger-wv",
+    title: "Kärcher Fenstersauger WV",
+    brand: "Kärcher",
+    category: "Haushalt",
+    description:
+      "Elektrischer Fenstersauger zum Absaugen von Schmutzwasser auf Fenstern und anderen glatten Flächen – erleichtert die Reinigung und reduziert herunterlaufendes Wasser.",
+    highlights: [
+      "Saugt Schmutzwasser direkt ab",
+      "Für Fenster und glatte Flächen",
+      "Kabelloser Betrieb"
+    ],
+    badge: "Fensterreinigung",
+    priority: "A",
+    asin: "B075F78KDV",
+    asinStatus: "verifiziert",
+    affiliateUrl: "https://link.amazon/B062jcggV",
+    amazonUrl: "https://www.amazon.de/dp/B075F78KDV",
+    image: { src: "", source: "amazon" },
+    articleSlugs: ["praktische-helfer-zuhause"],
+    research: {
+      priceRange: "",
+      ratingSnapshot: "",
+      reviewCountSnapshot: "",
+      checked: "Produktprüfung 09.09.2026"
+    }
+  },
+  {
+    id: "auvon-bewegungslicht",
+    title: "AUVON Nachtlicht mit Bewegungsmelder",
+    brand: "AUVON",
+    category: "Alltag",
+    description:
+      "Automatisches Nachtlicht mit Bewegungs- und Dämmerungssensor für Flur, Schlafzimmer oder Treppenbereich – praktisch für Orientierung bei Dunkelheit ohne die normale Raumbeleuchtung einzuschalten.",
+    highlights: [
+      "Bewegungssensor",
+      "Dämmerungssensor",
+      "Für Flur und Schlafzimmer"
+    ],
+    badge: "Licht",
+    priority: "A",
+    asin: "B0C3M5MS3N",
+    asinStatus: "verifiziert",
+    affiliateUrl: "https://link.amazon/B0jfdkPwa",
+    amazonUrl: "https://www.amazon.de/dp/B0C3M5MS3N",
+    image: { src: "", source: "amazon" },
+    articleSlugs: ["praktische-helfer-zuhause"],
+    research: {
+      priceRange: "",
+      ratingSnapshot: "",
+      reviewCountSnapshot: "",
+      checked: "Produktprüfung 09.09.2026"
+    }
+  },
+  {
+    id: "aibirth-akkustaubsauger",
+    title: "AIBIRTH kabelloser Akkustaubsauger",
+    brand: "AIBIRTH",
+    category: "Haushalt",
+    description:
+      "Kabelloser Akkustaubsauger für die schnelle Reinigung im Haushalt – ohne störendes Kabel flexibel einsetzbar und praktisch für Krümel, Staub und alltägliche Verschmutzungen.",
+    highlights: [
+      "Kabelloser Betrieb",
+      "Für verschiedene Wohnbereiche",
+      "Flexibel einsetzbar"
+    ],
+    badge: "Reinigung",
+    priority: "A",
+    asin: "B09BBZML1L",
+    asinStatus: "verifiziert",
+    affiliateUrl: "https://link.amazon/B020vUDD8",
+    amazonUrl: "https://www.amazon.de/dp/B09BBZML1L",
+    image: { src: "", source: "amazon" },
+    articleSlugs: ["praktische-helfer-zuhause"],
+    research: {
+      priceRange: "",
+      ratingSnapshot: "",
+      reviewCountSnapshot: "",
+      checked: "Produktprüfung 09.09.2026"
+    }
+  },
+  {
+    id: "bosch-akkubohrschrauber",
+    title: "Bosch Akku-Bohrschrauber mit Zubehör",
+    brand: "Bosch",
+    category: "Alltag",
+    description:
+      "Kabelloser Bohrschrauber für kleinere Montage- und Reparaturarbeiten im Haushalt – praktisch für Möbelaufbau, Schraubarbeiten und andere typische Aufgaben rund ums Zuhause.",
+    highlights: [
+      "Kabelloser Betrieb",
+      "Für Schraub- und Bohrarbeiten",
+      "Mit Zubehör-Set"
+    ],
+    badge: "Werkzeug",
+    priority: "A",
+    asin: "B015WGDX6E",
+    asinStatus: "verifiziert",
+    affiliateUrl: "https://link.amazon/B0e72cgBi",
+    amazonUrl: "https://www.amazon.de/dp/B015WGDX6E",
+    image: { src: "", source: "amazon" },
+    articleSlugs: ["praktische-helfer-zuhause"],
+    research: {
+      priceRange: "",
+      ratingSnapshot: "",
+      reviewCountSnapshot: "",
+      checked: "Produktprüfung 09.09.2026"
+    }
   }
 ];

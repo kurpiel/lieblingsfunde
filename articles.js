@@ -76,4 +76,11 @@ window.ARTICLES = [
         description:
             "Nützliche Geschenkideen für Menschen, die praktische und schöne Alltagsgegenstände mögen.",
     },
+    {
+        slug: "praktische-helfer-zuhause",
+        title: "10 praktische Helfer für Zuhause, die den Alltag leichter machen",
+        category: "Alltag",
+        description:
+            "Zehn praktische Alltagshelfer für typische kleine Probleme im Haushalt – von Reinigung und Ordnung bis zu Licht und kleinen Reparaturen.",
+    },
 ];
