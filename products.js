@@ -267,7 +267,7 @@ window.PRODUCTS = [
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B09BFT7NZJ",
     image: { src: "assets/products/smart-plug.svg", source: "illustration" },
-    articleSlugs: ["technik-alltag", "wohnaccessoires", "geschenkideen-zuhause"],
+    articleSlugs: ["technik-alltag", "geschenkideen-zuhause"],
     research: { priceRange: "ca. 10–20 € einzeln", ratingSnapshot: "4,6/5", reviewCountSnapshot: "600+", checked: "ASIN-Prüfung 27.08.2026" }
   },
   {
@@ -286,7 +286,7 @@ window.PRODUCTS = [
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B09CV7QQKB",
     image: { src: "assets/products/smart-plug.svg", source: "illustration" },
-    articleSlugs: ["wohnaccessoires", "technik-alltag", "geschenkideen-zuhause"],
+    articleSlugs: ["technik-alltag", "geschenkideen-zuhause"],
     research: { priceRange: "ca. 25–35 €", ratingSnapshot: "4,6/5", reviewCountSnapshot: "900+", checked: "ASIN-Prüfung 27.08.2026" }
   },
   {
@@ -303,7 +303,7 @@ window.PRODUCTS = [
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B09B8X9RGM",
     image: { src: "assets/products/smart-plug.svg", source: "illustration" },
-    articleSlugs: ["technik-alltag", "wohnaccessoires", "geschenkideen-zuhause"],
+    articleSlugs: ["technik-alltag", "geschenkideen-zuhause"],
     research: { priceRange: "stark aktionsabhängig", ratingSnapshot: "modellabhängig", reviewCountSnapshot: "sehr hohe Nachfrage", checked: "ASIN-Prüfung 27.08.2026" }
   },
   {
@@ -337,7 +337,7 @@ window.PRODUCTS = [
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B0CFPXBJ9Y",
     image: { src: "", source: "amazon" },
-    articleSlugs: ["technik-alltag", "geschenkideen-zuhause", "wohnaccessoires"],
+    articleSlugs: ["technik-alltag", "geschenkideen-zuhause"],
     research: { priceRange: "ca. 150–200+ € je Modell", ratingSnapshot: "modellabhängig", reviewCountSnapshot: "hohe Nachfrage", checked: "ASIN-Prüfung 27.08.2026" }
   },
   {
@@ -354,7 +354,7 @@ window.PRODUCTS = [
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B0DHZJVSYQ",
     image: { src: "assets/products/vacuum.svg", source: "illustration" },
-    articleSlugs: ["ordnung-zuhause", "wohnaccessoires"],
+    articleSlugs: ["ordnung-zuhause"],
     research: { priceRange: "ca. 100–150 €", ratingSnapshot: "Recherchekandidat", reviewCountSnapshot: "Bestseller-/Nachfrageindikator", checked: "ASIN-Prüfung 27.08.2026" }
   },
   {
@@ -517,6 +517,141 @@ window.PRODUCTS = [
     amazonUrl: "https://www.amazon.de/dp/B0FMFJJRTS",
     image: { src: "", source: "amazon" },
     articleSlugs: ["praktische-kuechenhelfer"],
+    research: {
+      priceRange: "",
+      ratingSnapshot: "",
+      reviewCountSnapshot: "",
+      checked: "Produktprüfung 09.09.2026"
+    }
+  },
+  {
+    id: "cosyland-aufbewahrungskorb",
+    title: "COSYLAND Aufbewahrungskorb aus Baumwollseil",
+    brand: "COSYLAND",
+    category: "Wohnen",
+    description:
+      "Geflochtener Aufbewahrungskorb aus Baumwollseil für Decken, Kissen, Spielzeug oder andere Alltagsgegenstände – praktisch, wenn offene Aufbewahrung ordentlich und wohnlich aussehen soll.",
+    highlights: [
+      "Geflochtenes Baumwollseil",
+      "Für Decken, Kissen und Alltagsgegenstände",
+      "Dekorative Aufbewahrung"
+    ],
+    badge: "Aufbewahrung",
+    priority: "A",
+    asin: "B0G48FWZLJ",
+    asinStatus: "verifiziert",
+    affiliateUrl: "https://link.amazon/B0dKyxa3I",
+    amazonUrl: "https://www.amazon.de/dp/B0G48FWZLJ",
+    image: { src: "", source: "amazon" },
+    articleSlugs: ["wohnaccessoires"],
+    research: {
+      priceRange: "",
+      ratingSnapshot: "",
+      reviewCountSnapshot: "",
+      checked: "Produktprüfung 09.09.2026"
+    }
+  },
+  {
+    id: "bonsery-akku-tischleuchte",
+    title: "Bonsery Akku-Tischleuchte",
+    brand: "Bonsery",
+    category: "Wohnen",
+    description:
+      "Kabellose Tischleuchte für Sideboard, Nachttisch oder Esstisch – geeignet, um ohne sichtbares Kabel schnell eine zusätzliche Lichtquelle und eine gemütlichere Atmosphäre zu schaffen.",
+    highlights: [
+      "Kabelloser Akkubetrieb",
+      "Mehrere Lichtfarben",
+      "Dimmbares Licht"
+    ],
+    badge: "Beleuchtung",
+    priority: "A",
+    asin: "B0FL29XPLN",
+    asinStatus: "verifiziert",
+    affiliateUrl: "https://link.amazon/B0gTvjC7l",
+    amazonUrl: "https://www.amazon.de/dp/B0FL29XPLN",
+    image: { src: "", source: "amazon" },
+    articleSlugs: ["wohnaccessoires"],
+    research: {
+      priceRange: "",
+      ratingSnapshot: "",
+      reviewCountSnapshot: "",
+      checked: "Produktprüfung 09.09.2026"
+    }
+  },
+  {
+    id: "hanobe-deko-tablett",
+    title: "Hanobe Deko-Tablett aus Holz",
+    brand: "Hanobe",
+    category: "Wohnen",
+    description:
+      "Dekoratives Holztablett für Kerzen, Vasen und kleinere Wohnaccessoires – hilft dabei, einzelne Dekoelemente optisch zu einer ruhigen Gruppe zusammenzufassen.",
+    highlights: [
+      "Dekorative Holzoptik",
+      "Für Kerzen und Wohnaccessoires",
+      "Ordnet kleine Dekoelemente"
+    ],
+    badge: "Deko",
+    priority: "A",
+    asin: "B0CDLXVVVZ",
+    asinStatus: "verifiziert",
+    affiliateUrl: "https://link.amazon/B0dyNCivv",
+    amazonUrl: "https://www.amazon.de/dp/B0CDLXVVVZ",
+    image: { src: "", source: "amazon" },
+    articleSlugs: ["wohnaccessoires"],
+    research: {
+      priceRange: "",
+      ratingSnapshot: "",
+      reviewCountSnapshot: "",
+      checked: "Produktprüfung 09.09.2026"
+    }
+  },
+  {
+    id: "bamworld-pflanzenstaender",
+    title: "Bamworld Pflanzenständer",
+    brand: "Bamworld",
+    category: "Wohnen",
+    description:
+      "Mehrstöckiger Pflanzenständer für Wohnzimmer, Flur oder andere Wohnbereiche – bringt mehrere Pflanzen auf unterschiedlichen Höhen unter und nutzt kleine Stellflächen besser aus.",
+    highlights: [
+      "Mehrere Ebenen",
+      "Für verschiedene Pflanzengrößen",
+      "Nutzt wenig Stellfläche"
+    ],
+    badge: "Pflanzen",
+    priority: "A",
+    asin: "B0D3NWW7LP",
+    asinStatus: "verifiziert",
+    affiliateUrl: "https://link.amazon/B03yldFeP",
+    amazonUrl: "https://www.amazon.de/dp/B0D3NWW7LP",
+    image: { src: "", source: "amazon" },
+    articleSlugs: ["wohnaccessoires"],
+    research: {
+      priceRange: "",
+      ratingSnapshot: "",
+      reviewCountSnapshot: "",
+      checked: "Produktprüfung 09.09.2026"
+    }
+  },
+  {
+    id: "kazai-schluesselboard",
+    title: "Kazai Schlüsselboard",
+    brand: "Kazai",
+    category: "Wohnen",
+    description:
+      "Minimalistisches Schlüsselboard für den Eingangsbereich – gibt Schlüsseln einen festen Platz und sorgt dafür, dass kleine Alltagsgegenstände nicht lose auf Kommode oder Sideboard liegen.",
+    highlights: [
+      "Fester Platz für Schlüssel",
+      "Minimalistisches Design",
+      "Für Flur und Eingangsbereich"
+    ],
+    badge: "Eingangsbereich",
+    priority: "A",
+    asin: "B0D5J2T5ZP",
+    asinStatus: "verifiziert",
+    affiliateUrl: "https://link.amazon/B0hC1xZN9",
+    amazonUrl: "https://www.amazon.de/dp/B0D5J2T5ZP",
+    image: { src: "", source: "amazon" },
+    articleSlugs: ["wohnaccessoires"],
     research: {
       priceRange: "",
       ratingSnapshot: "",
