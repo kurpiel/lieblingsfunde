@@ -29,7 +29,7 @@ window.PRODUCTS = [
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B09DGBJN2C",
     image: { src: "assets/products/dual-airfryer.svg", source: "illustration" },
-    articleSlugs: ["praktische-kuechenhelfer", "geschenkideen-zuhause"],
+    articleSlugs: ["geschenkideen-zuhause"],
     research: { priceRange: "ca. 100–170 €", ratingSnapshot: "4,7/5", reviewCountSnapshot: "8.000+", checked: "ASIN-Prüfung 27.08.2026" }
   },
   {
@@ -46,7 +46,7 @@ window.PRODUCTS = [
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B0CHB7TNWH",
     image: { src: "assets/products/dual-airfryer.svg", source: "illustration" },
-    articleSlugs: ["praktische-kuechenhelfer", "geschenkideen-zuhause"],
+    articleSlugs: ["geschenkideen-zuhause"],
     research: { priceRange: "ca. 110–140 €", ratingSnapshot: "4,8/5", reviewCountSnapshot: "200+", checked: "ASIN-Prüfung 27.08.2026" }
   },
   {
@@ -63,7 +63,7 @@ window.PRODUCTS = [
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B0DJ6ZPS3Y",
     image: { src: "assets/products/airfryer.svg", source: "illustration" },
-    articleSlugs: ["praktische-kuechenhelfer", "kleine-kueche"],
+    articleSlugs: ["kleine-kueche"],
     research: { priceRange: "ca. 110–140 €", ratingSnapshot: "4,8/5", reviewCountSnapshot: "900+", checked: "ASIN-Prüfung 27.08.2026" }
   },
   {
@@ -80,7 +80,7 @@ window.PRODUCTS = [
     affiliateUrl: "",
     amazonUrl: "https://www.amazon.de/dp/B009W0L6KM",
     image: { src: "assets/products/hand-blender.svg", source: "illustration" },
-    articleSlugs: ["praktische-kuechenhelfer", "kleine-kueche"],
+    articleSlugs: ["kleine-kueche"],
     research: { priceRange: "ca. 50–70 €", ratingSnapshot: "4,7/5", reviewCountSnapshot: "2.300+", checked: "ASIN-Prüfung 27.08.2026" }
   },
   {
@@ -387,6 +387,141 @@ window.PRODUCTS = [
       ratingSnapshot: "",
       reviewCountSnapshot: "",
       checked: "Produktprüfung 04.09.2026"
+    }
+  },
+  {
+    id: "joseph-joseph-folio-schneidebrett-set",
+    title: "Joseph Joseph Folio Schneidebrett-Set",
+    brand: "Joseph Joseph",
+    category: "Küche",
+    description:
+      "Mehrteiliges Schneidebrett-Set mit praktischem Aufbewahrungsbehälter – die einzelnen Bretter bleiben ordentlich verstaut und sind beim Kochen schnell griffbereit.",
+    highlights: [
+      "Mehrere Schneidebretter",
+      "Mit Aufbewahrungsbehälter",
+      "Platzsparend und griffbereit"
+    ],
+    badge: "Schneidebretter",
+    priority: "A",
+    asin: "B07YH19K5N",
+    asinStatus: "verifiziert",
+    affiliateUrl: "https://link.amazon/B01EV4wYo",
+    amazonUrl: "https://www.amazon.de/dp/B07YH19K5N",
+    image: { src: "", source: "amazon" },
+    articleSlugs: ["praktische-kuechenhelfer"],
+    research: {
+      priceRange: "",
+      ratingSnapshot: "",
+      reviewCountSnapshot: "",
+      checked: "Produktprüfung 09.09.2026"
+    }
+  },
+  {
+    id: "bosch-mmr08a1-zerkleinerer",
+    title: "Bosch MMR08A1 Universalzerkleinerer",
+    brand: "Bosch",
+    category: "Küche",
+    description:
+      "Kompakter Universalzerkleinerer für kleinere Küchenarbeiten – praktisch zum schnellen Zerkleinern und Verarbeiten von Zutaten, ohne dafür ein großes Küchengerät hervorzuholen.",
+    highlights: [
+      "Kompakte Bauform",
+      "400 Watt Leistung",
+      "800-ml-Behälter"
+    ],
+    badge: "Zerkleinern",
+    priority: "A",
+    asin: "B00B0WA2XW",
+    asinStatus: "verifiziert",
+    affiliateUrl: "https://link.amazon/B030Egwps",
+    amazonUrl: "https://www.amazon.de/dp/B00B0WA2XW",
+    image: { src: "", source: "amazon" },
+    articleSlugs: ["praktische-kuechenhelfer"],
+    research: {
+      priceRange: "",
+      ratingSnapshot: "",
+      reviewCountSnapshot: "",
+      checked: "Produktprüfung 09.09.2026"
+    }
+  },
+  {
+    id: "soehnle-page-compact-300",
+    title: "Soehnle Page Compact 300 Küchenwaage",
+    brand: "Soehnle",
+    category: "Küche",
+    description:
+      "Flache digitale Küchenwaage für das schnelle Abwiegen beim Kochen und Backen – kompakt genug, um sie nach Gebrauch unkompliziert zu verstauen.",
+    highlights: [
+      "Flache Bauform",
+      "Gut ablesbare LCD-Anzeige",
+      "Praktische Zuwiegefunktion"
+    ],
+    badge: "Küchenwaage",
+    priority: "A",
+    asin: "B079J5CWSY",
+    asinStatus: "verifiziert",
+    affiliateUrl: "https://link.amazon/B0j4WH85P",
+    amazonUrl: "https://www.amazon.de/dp/B079J5CWSY",
+    image: { src: "", source: "amazon" },
+    articleSlugs: ["praktische-kuechenhelfer"],
+    research: {
+      priceRange: "",
+      ratingSnapshot: "",
+      reviewCountSnapshot: "",
+      checked: "Produktprüfung 09.09.2026"
+    }
+  },
+  {
+    id: "oxo-pop-vorratsbehaelter",
+    title: "OXO Good Grips POP Vorratsbehälter",
+    brand: "OXO",
+    category: "Küche",
+    description:
+      "Transparenter Vorratsbehälter für trockene Lebensmittel – sorgt für einen schnellen Überblick im Vorratsschrank und hilft dabei, Lebensmittel ordentlich aufzubewahren.",
+    highlights: [
+      "Transparenter Behälter",
+      "Platzsparend organisierbar",
+      "Ideal für trockene Vorräte"
+    ],
+    badge: "Vorräte",
+    priority: "A",
+    asin: "B077VM684H",
+    asinStatus: "verifiziert",
+    affiliateUrl: "https://link.amazon/B0dfC1tj3",
+    amazonUrl: "https://www.amazon.de/dp/B077VM684H",
+    image: { src: "", source: "amazon" },
+    articleSlugs: ["praktische-kuechenhelfer"],
+    research: {
+      priceRange: "",
+      ratingSnapshot: "",
+      reviewCountSnapshot: "",
+      checked: "Produktprüfung 09.09.2026"
+    }
+  },
+  {
+    id: "loco-bird-besteckkasten",
+    title: "Loco Bird ausziehbarer Besteckkasten",
+    brand: "Loco Bird",
+    category: "Küche",
+    description:
+      "Ausziehbarer Besteckkasten zur flexiblen Organisation von Schubladen – schafft feste Bereiche für Besteck und andere kleinere Küchenutensilien.",
+    highlights: [
+      "Ausziehbare Konstruktion",
+      "Flexible Schubladenorganisation",
+      "Für Besteck und Küchenutensilien"
+    ],
+    badge: "Ordnung",
+    priority: "A",
+    asin: "B0FMFJJRTS",
+    asinStatus: "verifiziert",
+    affiliateUrl: "https://link.amazon/B03uOP6hv",
+    amazonUrl: "https://www.amazon.de/dp/B0FMFJJRTS",
+    image: { src: "", source: "amazon" },
+    articleSlugs: ["praktische-kuechenhelfer"],
+    research: {
+      priceRange: "",
+      ratingSnapshot: "",
+      reviewCountSnapshot: "",
+      checked: "Produktprüfung 09.09.2026"
     }
   }
 ];
