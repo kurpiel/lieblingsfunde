@@ -1,0 +1,45 @@
+.article-recommendation {
+  margin-top: 1rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid #dfe7e0;
+  border-radius: 14px;
+  background: #f7faf7;
+  display: grid;
+  gap: .3rem;
+}
+.article-recommendation-label {
+  color: #496b55;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.article-recommendation strong {
+  color: #1f3326;
+  font-size: 1rem;
+}
+.article-recommendation small {
+  color: #66736a;
+}
+.article-recommendation a {
+  width: fit-content;
+  margin-top: .25rem;
+  color: #315f42;
+  font-weight: 700;
+  text-decoration: none;
+}
+.article-recommendation a:hover {
+  text-decoration: underline;
+}
+.article-recommendation-pending {
+  border-style: dashed;
+  background: #fbfaf6;
+}
+.article-recommendation-pending .article-recommendation-label {
+  color: #8a6a43;
+}
+.article-recommendation-pending p {
+  margin: 0;
+  color: #6e6a62;
+  font-size: .92rem;
+}
