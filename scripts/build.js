@@ -19,6 +19,7 @@ const articles = loadWindowVar("articles.js", "ARTICLES");
 const collections = loadWindowVar("collections.js", "COLLECTIONS");
 const settings = loadWindowVar("settings.js", "SITE_SETTINGS");
 const publishedArticles = articles.filter(a => a.published !== false);
+const homeFavoriteIds = ["rotho-cauma-kuehlschrank-organizer", "joseph-joseph-folio-schneidebrett-set", "cosyland-aufbewahrungskorb", "bonsery-akku-tischleuchte", "philips-fusselrasierer", "kaercher-fenstersauger-wv", "ugreen-magnetische-kabelhalter", "nelko-p21-etikettendrucker", "aike-seifenspender", "canslab-ultrablade-pro", "anker-nano-10000", "ugreen-nexode-100w"];
 
 function esc(value) {
   return String(value ?? "").replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
@@ -142,7 +143,8 @@ function applyMeta(html, { title, description, url, image, type = "website" }) {
     url: BASE_URL,
     image: BASE_URL + "assets/social/lieblingsfunde.png",
   });
-  html = replaceBetweenIds(html, '<section class="product-grid" id="productGrid" aria-live="polite">', products.map(p => productCard(p, 3)).join("\n"), "section");
+  const homeFavorites = homeFavoriteIds.map(id => products.find(p => p.id === id)).filter(Boolean);
+  html = replaceBetweenIds(html, '<section class="product-grid" id="productGrid" aria-live="polite">', homeFavorites.map(p => productCard(p, 3)).join("\n"), "section");
   const collectionCards = collections.map(c => {
     const ids = c.productIds || [];
     const count = ids.length ? products.filter(p => ids.includes(p.id)).length : products.filter(p => p.category === c.category).length;
@@ -152,6 +154,22 @@ function applyMeta(html, { title, description, url, image, type = "website" }) {
   const articleCards = publishedArticles.map(a => `<a class="article-card" href="${esc(a.slug)}.html"><span class="eyebrow">${esc(a.category)}</span><h3>${esc(a.title)}</h3><p>${esc(a.description)}</p><strong>Ratgeber lesen →</strong></a>`).join("\n");
   html = replaceBetweenIds(html, '<div class="article-cards" id="articleCards">', articleCards, "div");
   write("index.html", html);
+}
+
+// PRODUKTÜBERSICHT
+{
+  const file = "produkte.html";
+  if (fs.existsSync(path.join(ROOT, file))) {
+    let html = read(file);
+    html = applyMeta(html, {
+      title: "Alle Produktempfehlungen | Lieblingsfunde",
+      description: "Alle Produktempfehlungen von Lieblingsfunde übersichtlich nach Küche, Wohnen, Haushalt, Alltag, Homeoffice und Technik.",
+      url: BASE_URL + file,
+      image: BASE_URL + "assets/social/lieblingsfunde.png",
+    });
+    html = replaceBetweenIds(html, '<section class="product-grid" id="productGrid" aria-live="polite">', products.map(p => productCard(p, 3)).join("\n"), "section");
+    write(file, html);
+  }
 }
 
 // SAMMLUNGEN
@@ -202,7 +220,7 @@ for (const article of articles) {
 }
 
 // SITEMAP: nur veröffentlichte Ratgeber
-const urls = [BASE_URL, ...collections.map(c => BASE_URL + c.page), ...publishedArticles.map(a => BASE_URL + `${a.slug}.html`)];
+const urls = [BASE_URL, BASE_URL + "produkte.html", ...collections.map(c => BASE_URL + c.page), ...publishedArticles.map(a => BASE_URL + `${a.slug}.html`)];
 const sitemap = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">', ...urls.flatMap(url => ["  <url>", `    <loc>${url}</loc>`, "  </url>"]), "</urlset>", ""].join("\n");
 write("sitemap.xml", sitemap);
 

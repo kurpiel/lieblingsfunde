@@ -1,4 +1,5 @@
 const products = window.PRODUCTS ?? [];
+const isCuratedHomeGrid = document.body.classList.contains("curated-home");
 
 const grid = document.querySelector("#productGrid");
 const filters = document.querySelector("#categoryFilters");

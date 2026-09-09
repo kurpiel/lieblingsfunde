@@ -463,3 +463,8 @@ h2 { font-size: clamp(2rem, 4vw, 3.7rem); letter-spacing: -.02em; }
   .footer-links { justify-content: flex-start; }
   .footer-logo { height: 52px; }
 }
+
+.home-favorites-heading { align-items: end; gap: 24px; }
+.home-favorites-heading .section-intro { max-width: 680px; margin: 8px 0 0; color: var(--muted); }
+.home-favorites-heading > .button { flex: 0 0 auto; }
+@media (max-width: 760px) { .home-favorites-heading { align-items: flex-start; } }

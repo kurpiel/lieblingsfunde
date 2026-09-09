@@ -19,7 +19,7 @@ window.COLLECTIONS = [
     page: "wohnen.html",
     title: "Schöne & praktische Ideen für Zuhause",
     eyebrow: "Wohnen",
-    description: "Smart-Home- und Haushaltsprodukte, die sich gut in Wohn- und Ordnungsinhalte integrieren lassen.",
+    description: "Schöne und praktische Ideen für mehr Ordnung, Atmosphäre und Komfort zuhause.",
     productIds: ["philips-hue-smart-plug", "tapo-p110", "echo-dot", "kindle-paperwhite", "levoit-lvac-200"]
   },
   {
@@ -27,7 +27,7 @@ window.COLLECTIONS = [
     page: "technik.html",
     title: "Nützliche Technik-Favoriten",
     eyebrow: "Technik",
-    description: "Powerbanks, USB-C-Zubehör und kompakte Technik mit klarer Kaufintention.",
+    description: "Praktische Technik für Laden, Arbeiten und den digitalen Alltag.",
     productIds: [
       "anker-737-powerbank", "anker-nano-10000", "ugreen-nexode-100w", "ugreen-revodok-pro",
       "ugreen-usb-c-dock", "tapo-p110", "echo-dot", "fire-tv-stick-hd", "kindle-paperwhite",
