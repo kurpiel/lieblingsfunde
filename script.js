@@ -87,3 +87,39 @@ if (year) {
 // statisch vorgerenderten HTML-Version bestehen, bis ein Nutzer
 // Suche oder Filter verwendet.
 renderFilters();
+
+
+// Carousel auf der Startseite für aktuell hervorgehobene Produkte.
+const featuredCarouselTrack = document.querySelector("#featuredCarouselTrack");
+const featuredPrev = document.querySelector("#featuredPrev");
+const featuredNext = document.querySelector("#featuredNext");
+
+function scrollFeaturedCarousel(direction) {
+  if (!featuredCarouselTrack) return;
+
+  const firstCard = featuredCarouselTrack.querySelector(".product-card");
+  const gap = 18;
+  const step = firstCard
+    ? firstCard.getBoundingClientRect().width + gap
+    : featuredCarouselTrack.clientWidth * 0.85;
+
+  featuredCarouselTrack.scrollBy({
+    left: direction * step,
+    behavior: "smooth",
+  });
+}
+
+featuredPrev?.addEventListener("click", () => scrollFeaturedCarousel(-1));
+featuredNext?.addEventListener("click", () => scrollFeaturedCarousel(1));
+
+featuredCarouselTrack?.addEventListener("keydown", (event) => {
+  if (event.key === "ArrowLeft") {
+    event.preventDefault();
+    scrollFeaturedCarousel(-1);
+  }
+
+  if (event.key === "ArrowRight") {
+    event.preventDefault();
+    scrollFeaturedCarousel(1);
+  }
+});

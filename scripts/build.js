@@ -105,6 +105,33 @@ function replaceBetweenIds(html, elementStartPattern, content, closingTag) {
   if (!re.test(html)) throw new Error(`Build marker not found: ${elementStartPattern}`);
   return html.replace(re, `$1\n${content}\n$2`);
 }
+
+// Replaces the contents of a DIV while correctly respecting nested DIVs.
+// This makes repeated `npm run build` calls idempotent for the carousel.
+function replaceDivContents(html, elementStartPattern, content) {
+  const start = html.indexOf(elementStartPattern);
+  if (start < 0) throw new Error(`Build marker not found: ${elementStartPattern}`);
+
+  const openEnd = start + elementStartPattern.length;
+  const tagRe = /<\/?div\b[^>]*>/gi;
+  tagRe.lastIndex = openEnd;
+
+  let depth = 1;
+  let match;
+  while ((match = tagRe.exec(html))) {
+    if (/^<\/div/i.test(match[0])) {
+      depth -= 1;
+      if (depth === 0) {
+        return html.slice(0, openEnd) + `\n${content}\n` + html.slice(match.index);
+      }
+    } else {
+      depth += 1;
+    }
+  }
+
+  throw new Error(`Closing div not found for: ${elementStartPattern}`);
+}
+
 function setTitle(html, title) { return html.replace(/<title>[\s\S]*?<\/title>/i, `<title>${esc(title)}</title>`); }
 function upsertMeta(html, attr, key, content) {
   const pattern = new RegExp(`<meta\\s+${attr}="${key}"\\s+content="[^"]*"\\s*\\/?>`, "i");
@@ -143,6 +170,8 @@ function applyMeta(html, { title, description, url, image, type = "website" }) {
     url: BASE_URL,
     image: BASE_URL + "assets/social/lieblingsfunde.png",
   });
+  const featuredProducts = products.filter(product => product.featured === true);
+  html = replaceDivContents(html, '<div class="featured-carousel" id="featuredCarouselTrack" tabindex="0" aria-label="Aktuelle Produktempfehlungen">', featuredProducts.map(p => productCard(p, 3)).join("\n"));
   const homeFavorites = homeFavoriteIds.map(id => products.find(p => p.id === id)).filter(Boolean);
   html = replaceBetweenIds(html, '<section class="product-grid" id="productGrid" aria-live="polite">', homeFavorites.map(p => productCard(p, 3)).join("\n"), "section");
   const collectionCards = collections.map(c => {
